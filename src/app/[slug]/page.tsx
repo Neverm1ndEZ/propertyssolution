@@ -72,11 +72,11 @@ export default async function LandingPage({
 				<h1 className="text-fluid-h2 font-extrabold text-balance text-brand-950">
 					{page.h1}
 				</h1>
-				<h2 className="mt-3 max-w-3xl text-lg font-semibold text-balance text-brand-700 sm:text-xl">
+				<h2 className="mt-3 max-w-5xl text-lg font-semibold text-balance text-brand-700 sm:text-xl">
 					{page.h2}
 				</h2>
 
-				<div className="mt-7 max-w-3xl space-y-4 leading-relaxed text-brand-900/75">
+				<div className="mt-7 max-w-5xl space-y-4 leading-relaxed text-brand-900/75">
 					{page.body.map((para) => (
 						<p key={para.slice(0, 40)}>{para}</p>
 					))}

@@ -216,7 +216,7 @@ export default function HomeGreaterNoida() {
 							</li>
 						))}
 					</ul>
-					<p className="mx-auto mt-8 max-w-3xl text-center text-sm leading-relaxed text-brand-900/70">
+					<p className="mx-auto mt-8 max-w-4xl text-center text-sm leading-relaxed text-brand-900/70">
 						Navigate {SITE.region} with our complete layout map series — identify
 						residential sectors, commercial belts and industrial pockets, check
 						plot numbers and road widths, and download any plan at full
@@ -265,7 +265,7 @@ export default function HomeGreaterNoida() {
 				<h2 className="mt-2 text-fluid-h2 font-extrabold text-balance text-brand-950">
 					Real Estate Agent in {SITE.region}
 				</h2>
-				<p className="mt-3 max-w-3xl text-pretty text-brand-900/70">
+				<p className="mt-3 max-w-5xl text-pretty text-brand-900/70">
 					Expert guidance you can trust. We have worked these sectors since
 					2009, so we can tell you what a plot should cost, which authority
 					paperwork it needs and what the land beside it is reserved for —

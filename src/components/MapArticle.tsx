@@ -70,7 +70,7 @@ export default function MapArticle({
 			<h2 className="text-fluid-h2 font-extrabold text-balance text-brand-950">
 				Property Dealer in {where} — {SITE_NAME}
 			</h2>
-			<p className="mt-3 max-w-3xl text-pretty text-brand-900/75">
+			<p className="mt-3 max-w-5xl text-pretty text-brand-900/75">
 				Looking for a plot in {mapName}? The layout plan above is the authority
 				plan for {where} — plot numbers, plot sizes, road widths, parks and the
 				facility and commercial reservations. Check the plot on it first, then
@@ -83,7 +83,7 @@ export default function MapArticle({
 				<h3 className="text-lg font-bold text-brand-950">
 					Residential plots for sale in {where}
 				</h3>
-				<p className="mt-2 max-w-3xl text-pretty text-brand-900/70">
+				<p className="mt-2 max-w-5xl text-pretty text-brand-900/70">
 					Authority plots in {mapName} come up regularly — corner plots, park
 					facing, and the larger sizes on the wider roads. We also deal in 6%
 					and 7% abadi plots in the villages around {areaName}, commercial
@@ -134,7 +134,7 @@ export default function MapArticle({
 				<h3 className="text-lg font-bold text-brand-950">
 					Why {where} is worth buying into
 				</h3>
-				<ul className="mt-3 max-w-3xl list-disc space-y-2 pl-5 text-brand-900/70 marker:text-brand-500">
+				<ul className="mt-3 max-w-5xl list-disc space-y-2 pl-5 text-brand-900/70 marker:text-brand-500">
 					<li>
 						A planned sector with a published authority layout plan, so the plot
 						number, the size and the road in front of it are all a matter of
@@ -159,7 +159,7 @@ export default function MapArticle({
 				<h3 className="text-lg font-bold text-brand-950">
 					Talk to a property agent in {where}
 				</h3>
-				<p className="mt-2 max-w-3xl text-brand-900/70">
+				<p className="mt-2 max-w-5xl text-brand-900/70">
 					Download the {mapName} layout plan above, find the plot you are
 					interested in, and call us on{" "}
 					<a

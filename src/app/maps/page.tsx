@@ -64,7 +64,7 @@ export default function AllMapsPage() {
 				<h1 className="text-fluid-h2 text-center font-extrabold text-balance text-brand-950">
 					Navigate with Ease — Explore Our Maps
 				</h1>
-				<p className="mx-auto mt-3 max-w-2xl text-center text-brand-900/65">
+				<p className="mx-auto mt-3 max-w-4xl text-center text-brand-900/65">
 					All {ALL_MAPS.length} authority layout plans across{" "}
 					{AREA_LIST.map((a) => a.name).join(", ")} — free to view and download
 					at full resolution.
@@ -126,7 +126,7 @@ export default function AllMapsPage() {
 							</Link>
 
 							{copy && (
-								<p className="mx-auto mt-5 max-w-3xl text-center text-sm leading-relaxed text-brand-900/70">
+								<p className="mx-auto mt-5 max-w-4xl text-center text-sm leading-relaxed text-brand-900/70">
 									{copy.blurb}
 								</p>
 							)}

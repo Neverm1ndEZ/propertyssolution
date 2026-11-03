@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
 	return (
 		<div className="container-page py-8 lg:py-12">
-			<header className="max-w-2xl">
+			<header className="max-w-4xl">
 				<p className="text-xs font-semibold tracking-widest text-brand-600 uppercase">
 					Contact
 				</p>

@@ -59,7 +59,7 @@ export default async function MapGridPage({
 				<h1 className="text-fluid-h2 font-extrabold text-balance text-brand-950">
 					{area.name} layout plans
 				</h1>
-				<p className="mt-2 max-w-prose text-sm text-pretty text-brand-900/60">
+				<p className="mt-2 max-w-5xl text-sm text-pretty text-brand-900/60">
 					{area.count} authority plans, free to view and download at full
 					resolution.
 				</p>
