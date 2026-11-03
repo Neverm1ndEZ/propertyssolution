@@ -1285,9 +1285,19 @@ const CATEGORY: { rank: number; test: RegExp }[] = [
 
 const SECTOR_RE = /^(PART\s+)?SECTOR[\s-]*\d/i;
 
+/**
+ * A sheet that says RESIDENTIAL on it is housing, whatever else is in the name.
+ * Without this, "UPSIDC SURAJPUR SITE-C RESIDENTIAL" matches SURAJPUR and files
+ * itself under industrial. Abadi and village sheets keep their own category —
+ * "7 PERCENT RESIDENTIAL PLOTS …" belongs with the villages, not the sectors.
+ */
+const RESIDENTIAL_RE = /RESIDENTIAL/i;
+const VILLAGE_RE = /ABADI|VILLAGE|VILL\.|^\d+\s*PERCENT/i;
+
 /** 0 = numbered sector, 1 = named residential sector, 2+ = see CATEGORY. */
 function categoryRank(name: string, sectorsLead: boolean): number {
 	if (SECTOR_RE.test(name)) return sectorsLead ? 0 : 1;
+	if (RESIDENTIAL_RE.test(name) && !VILLAGE_RE.test(name)) return 1;
 	for (const { rank, test } of CATEGORY) if (test.test(name)) return rank;
 	return 1;
 }

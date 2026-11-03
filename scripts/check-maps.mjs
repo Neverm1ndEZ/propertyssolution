@@ -41,6 +41,9 @@ for (const area of AREA_LIST) {
 		names.filter((n) => SECTOR_RE.test(n)).length / names.length > 0.4;
 	const rank = (n) =>
 		SECTOR_RE.test(n) ? (sectorsLead ? 0 : 1)
+		// A sheet that says RESIDENTIAL is housing, whatever else is in the name
+		// — except abadi/village plots, which keep their own category.
+		: /RESIDENTIAL/i.test(n) && !/ABADI|VILLAGE|VILL\.|^\d+\s*PERCENT/i.test(n) ? 1
 		: /ECOTECH|UDYOG|TECH ZONE|TOY CITY|EPIP|INDUSTRIAL|SIKANDRABAD|SURAJPUR|SITE-V/i.test(n) ? 2
 		: /KNOWLEDGE PARK|INSTITUTIONAL/i.test(n) ? 3
 		: /ABADI|VILLAGE|VILL\.|^\d+\s*PERCENT|GROUP HOUSING/i.test(n) ? 4
