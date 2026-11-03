@@ -1296,11 +1296,24 @@ const VILLAGE_RE = /ABADI|VILLAGE|VILL\.|^\d+\s*PERCENT/i;
 
 /** 0 = numbered sector, 1 = named residential sector, 2+ = see CATEGORY. */
 function categoryRank(name: string, sectorsLead: boolean): number {
+	// Abadi and village sheets are village sheets even when the name opens with
+	// a sector ("PART SECTOR-17 ABADI VILLAGE DHANAURI"). This has to beat the
+	// sector test or they interleave with the sector plans, which is not how
+	// Shiva Associates list them — their sector pages carry no village sheets.
+	if (VILLAGE_RE.test(name)) return 4;
 	if (SECTOR_RE.test(name)) return sectorsLead ? 0 : 1;
-	if (RESIDENTIAL_RE.test(name) && !VILLAGE_RE.test(name)) return 1;
+	if (RESIDENTIAL_RE.test(name)) return 1;
 	for (const { rank, test } of CATEGORY) if (test.test(name)) return rank;
 	return 1;
 }
+
+/**
+ * A sheet covering two sectors ("SECTOR 18 AND 20", "SECTOR 24-A AND SECTOR
+ * 22-E"). Shiva list these last within their first sector number, after the
+ * single-sector parts. Anchored right after the sector number so the many
+ * "PART-7A AND 7E" / "PART-K AND L" names do not match.
+ */
+const COMBINED_RE = /^SECTOR[\s-]*\d+\s*(-\s*[A-Z])?\s+AND\s+(SECTOR[\s-]*)?\d/i;
 
 /** Leading sector number, so SECTOR 20 follows SECTOR 18 rather than SECTOR 2. */
 function sectorNumber(name: string): number {
@@ -1328,6 +1341,10 @@ function compareMaps(a: MapItem, b: MapItem, sectorsLead: boolean): number {
 		const na = sectorNumber(a.name);
 		const nb = sectorNumber(b.name);
 		if (na !== nb) return na - nb;
+		// Same sector: the two-sector sheet closes the run.
+		const ca = Number(COMBINED_RE.test(a.name));
+		const cb = Number(COMBINED_RE.test(b.name));
+		if (ca !== cb) return ca - cb;
 	}
 	return natural(a.name, b.name);
 }

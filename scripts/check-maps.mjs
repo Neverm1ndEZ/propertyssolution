@@ -40,10 +40,12 @@ for (const area of AREA_LIST) {
 	const sectorsLead =
 		names.filter((n) => SECTOR_RE.test(n)).length / names.length > 0.4;
 	const rank = (n) =>
-		SECTOR_RE.test(n) ? (sectorsLead ? 0 : 1)
-		// A sheet that says RESIDENTIAL is housing, whatever else is in the name
-		// — except abadi/village plots, which keep their own category.
-		: /RESIDENTIAL/i.test(n) && !/ABADI|VILLAGE|VILL\.|^\d+\s*PERCENT/i.test(n) ? 1
+		// Abadi/village sheets first: they are village sheets even when the name
+		// opens with a sector ("PART SECTOR-17 ABADI VILLAGE DHANAURI").
+		/ABADI|VILLAGE|VILL\.|^\d+\s*PERCENT|GROUP HOUSING/i.test(n) ? 4
+		: SECTOR_RE.test(n) ? (sectorsLead ? 0 : 1)
+		// A sheet that says RESIDENTIAL is housing, whatever else is in the name.
+		: /RESIDENTIAL/i.test(n) ? 1
 		: /ECOTECH|UDYOG|TECH ZONE|TOY CITY|EPIP|INDUSTRIAL|SIKANDRABAD|SURAJPUR|SITE-V/i.test(n) ? 2
 		: /KNOWLEDGE PARK|INSTITUTIONAL/i.test(n) ? 3
 		: /ABADI|VILLAGE|VILL\.|^\d+\s*PERCENT|GROUP HOUSING/i.test(n) ? 4
@@ -55,9 +57,11 @@ for (const area of AREA_LIST) {
 		[...ranks].sort((a, b) => a - b),
 		`${area.slug}: categories are out of order`,
 	);
-	// Numbered sectors ascend by sector number.
+	// Numbered sectors ascend by sector number. Only the sector bucket counts:
+	// a village sheet can open with a sector too ("PART SECTOR-17 ABADI …") and
+	// it sorts with the villages, well after the sector run.
 	const secNums = names
-		.filter((n) => sectorsLead && SECTOR_RE.test(n))
+		.filter((n, i) => ranks[i] === 0)
 		.map((n) => Number(n.match(/SECTOR[\s-]*(\d+)/i)[1]));
 	assert.deepEqual(
 		secNums,
