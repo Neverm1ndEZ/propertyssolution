@@ -1336,11 +1336,16 @@ const ORDERED = Object.fromEntries(
  * Only the regions this deployment owns. Greater Noida and Yamuna Expressway
  * are split across the two sites so neither publishes the other's map pages.
  */
+/** The region's own master plan is the honest cover; fall back to the first map. */
+const coverFor = (key: AreaKey) =>
+	(ORDERED[key].find((m) => /^MASTER PLAN/i.test(m.name)) ?? ORDERED[key][0])
+		.imageUrl;
+
 export const AREA_LIST = SITE.areas.map((key) => ({
 	key,
 	...AREAS[key],
 	count: ORDERED[key].length,
-	cover: ORDERED[key][0].imageUrl,
+	cover: coverFor(key),
 }));
 
 type Area = (typeof AREA_LIST)[number];

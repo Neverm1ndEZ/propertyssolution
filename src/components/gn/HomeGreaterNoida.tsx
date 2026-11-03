@@ -170,9 +170,9 @@ export default function HomeGreaterNoida() {
 					<h2 className="text-fluid-h2 text-center font-extrabold text-brand-950">
 						Our Layout Maps:
 					</h2>
-					<ul className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+					<ul className="mt-9 grid gap-6 sm:grid-cols-3">
 						{AREA_LIST.map((area) => (
-							<li key={area.slug}>
+							<li key={area.slug} className="reveal">
 								<Link href={`/maps/${area.slug}`} className="group block">
 									<span className="block overflow-hidden rounded-lg bg-white p-2 shadow-(--shadow-soft) ring-1 ring-sand-200">
 										{/* eslint-disable-next-line @next/next/no-img-element -- prebuilt webp thumbnail. */}
@@ -201,7 +201,7 @@ export default function HomeGreaterNoida() {
 					</p>
 					<div className="mt-7 text-center">
 						<Link
-							href={`/maps/${AREA_LIST[0].slug}`}
+							href="/maps"
 							className="inline-block rounded-full bg-brand-700 px-8 py-3 text-sm font-semibold text-white transition-[background-color,transform] hover:-translate-y-0.5 hover:bg-brand-800"
 						>
 							Explore More
