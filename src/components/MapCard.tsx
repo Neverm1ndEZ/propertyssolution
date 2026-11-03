@@ -3,10 +3,14 @@ import { thumbUrl, type MapItem } from "@/lib/map-utils";
 
 /**
  * Card layout mirrors Shiva Associates' map grid: framed thumbnail with a solid
- * label bar underneath carrying the sector name. Their bar is black on red; the
- * client asked for white and green, so the bar is brand green.
+ * label bar underneath carrying the sector name, and nothing else. Their bar is
+ * black on red; the client asked for white and green, so the bar is brand green.
  *
- * The thumbnail is a prebuilt ~28KB webp (`pnpm img`), so the grid never touches
+ * The whole card is the link. Download lives on the map's own page, where the
+ * full-resolution plan is on screen to download — a second row of View/Download
+ * links under every card only crowded the grid.
+ *
+ * The thumbnail is a prebuilt ~25KB webp (`pnpm img`), so the grid never touches
  * the 2400px originals and never hits the image optimizer.
  */
 export default function MapCard({
@@ -51,19 +55,6 @@ export default function MapCard({
 				</span>
 			</Link>
 
-			<div className="flex items-center justify-between gap-2 px-3 py-2 text-[0.65rem] font-semibold tracking-wide uppercase">
-				<Link href={href} className="text-brand-700 hover:text-brand-900">
-					View map
-				</Link>
-				{/* Native download — same-origin, so no JS and no client bundle. */}
-				<a
-					href={map.imageUrl}
-					download={map.name}
-					className="text-brand-900/45 hover:text-brand-700"
-				>
-					Download
-				</a>
-			</div>
 		</article>
 	);
 }
