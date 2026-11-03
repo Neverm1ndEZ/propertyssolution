@@ -2,12 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import {
 	Building2,
-	Clock,
 	Factory,
 	Home as HomeIcon,
 	LandPlot,
-	MapPin,
-	Phone,
 	Store,
 	TrendingUp,
 	Users,
@@ -17,14 +14,7 @@ import MapCard from "@/components/MapCard";
 import ContactSection from "@/components/ContactSection";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
 import { thumbUrl } from "@/lib/map-utils";
-import {
-	ADDRESS,
-	HOURS,
-	OFFICE_MAP_EMBED,
-	PHONE,
-	PHONE_HREF,
-	SITE_NAME,
-} from "@/lib/site";
+import { OFFICE_MAP_EMBED, SITE_NAME } from "@/lib/site";
 import { SITE } from "@/config/sites";
 
 /**
@@ -106,7 +96,14 @@ const EXPERTISE = [
 	},
 ];
 
-const FEATURED = [...ALL_MAPS].sort(() => Math.random() - 0.5).slice(0, 8);
+/**
+ * Featured maps come off the top of this site's lead region, in order. A random
+ * pick reshuffled on every build and surfaced Yamuna villages on the Greater
+ * Noida home page, which is not what "featured" means to anyone reading it.
+ */
+const FEATURED = ALL_MAPS.filter(
+	(m) => m.area.slug === AREA_LIST[0].slug,
+).slice(0, 8);
 
 export default function HomeGreaterNoida() {
 	return (
@@ -321,44 +318,17 @@ export default function HomeGreaterNoida() {
 					<h2 className="text-fluid-h2 font-extrabold text-balance text-brand-950">
 						Visit us — we are right here in {SITE.region}
 					</h2>
-					<div className="mt-8 grid gap-6 lg:grid-cols-[1fr_1.4fr]">
-						<ul className="space-y-5 text-sm">
-							<li className="flex gap-3">
-								<MapPin
-									aria-hidden
-									className="mt-0.5 size-5 shrink-0 text-brand-600"
-								/>
-								<span className="text-brand-900/75">{ADDRESS}</span>
-							</li>
-							<li className="flex gap-3">
-								<Phone
-									aria-hidden
-									className="mt-0.5 size-5 shrink-0 text-brand-600"
-								/>
-								<a
-									href={PHONE_HREF}
-									className="font-semibold text-brand-800 hover:text-brand-950"
-								>
-									{PHONE}
-								</a>
-							</li>
-							<li className="flex gap-3">
-								<Clock
-									aria-hidden
-									className="mt-0.5 size-5 shrink-0 text-brand-600"
-								/>
-								<span className="text-brand-900/75">{HOURS}</span>
-							</li>
-						</ul>
-						<div className="card-surface overflow-hidden">
-							<iframe
-								src={OFFICE_MAP_EMBED}
-								title={`Map showing ${SITE_NAME} in ${SITE.region}`}
-								loading="lazy"
-								referrerPolicy="no-referrer-when-downgrade"
-								className="block h-80 w-full border-0 sm:h-96"
-							/>
-						</div>
+					{/* Map only. Address, phone and hours are in Get In Touch above and
+					    in the footer; a third copy here just read as two contact blocks.
+					    The map's own card carries the address anyway. */}
+					<div className="card-surface mt-7 overflow-hidden">
+						<iframe
+							src={OFFICE_MAP_EMBED}
+							title={`Map showing ${SITE_NAME} in ${SITE.region}`}
+							loading="lazy"
+							referrerPolicy="no-referrer-when-downgrade"
+							className="block h-80 w-full border-0 sm:h-[26rem]"
+						/>
 					</div>
 				</div>
 			</section>
