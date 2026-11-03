@@ -9,6 +9,10 @@ export const ADDRESS =
 	"Tradex Tower 2, Alpha 1 Commercial Belt, Greater Noida, Uttar Pradesh 201308";
 export const HOURS = "Mon – Sun, 9:30 AM – 8:30 PM";
 
+/** Google Maps embed for the office. `output=embed` needs no API key. */
+export const OFFICE_MAP_EMBED =
+	"https://www.google.com/maps?q=Tradex+Tower+2,+Alpha+1+Commercial+Belt,+Greater+Noida&output=embed";
+
 /**
  * Canonical origin, no trailing slash. Each deployment has its own domain, so
  * this resolves from the active site config first. Vercel's own production URL

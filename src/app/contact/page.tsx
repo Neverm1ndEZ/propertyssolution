@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
-import { ADDRESS, EMAIL, HOURS, PHONE, PHONE_HREF, SITE_NAME } from "@/lib/site";
+import {
+	ADDRESS,
+	EMAIL,
+	HOURS,
+	OFFICE_MAP_EMBED,
+	PHONE,
+	PHONE_HREF,
+	SITE_NAME,
+} from "@/lib/site";
 
 export const metadata: Metadata = {
 	title: "Contact us",
 	description: `Call ${PHONE} or email ${EMAIL}. Property Solutions, Tradex Tower 2, Alpha 1 Commercial Belt, Greater Noida.`,
 	alternates: { canonical: "/contact" },
 };
-
-const MAP_EMBED =
-	"https://www.google.com/maps?q=Tradex+Tower+2,+Alpha+1+Commercial+Belt,+Greater+Noida&output=embed";
 
 export default function ContactPage() {
 	return (
@@ -86,7 +91,7 @@ export default function ContactPage() {
 			<section className="card-surface mt-8 overflow-hidden">
 				<h2 className="sr-only">Our location</h2>
 				<iframe
-					src={MAP_EMBED}
+					src={OFFICE_MAP_EMBED}
 					title={`Map showing ${SITE_NAME} in Greater Noida`}
 					loading="lazy"
 					referrerPolicy="no-referrer-when-downgrade"
