@@ -118,18 +118,17 @@ export default function MapGrid({
 								}`}
 							>
 								{section.items.map((map, i) => (
-									// content-visibility lets the browser skip layout/paint for
-									// offscreen cards — smooth rather than janky at 177.
-									<div
+									// No content-visibility here. Skipped cards reserve a guessed
+									// 320px against a real 286px, so rows resized as you scrolled
+									// and a card could paint at the wrong box — a square corner
+									// poking out of the rounded card. The thumbnails are lazy
+									// 25KB webps, which is the part that actually mattered.
+									<MapCard
 										key={map.id}
-										className="h-full [contain-intrinsic-size:auto_320px] [content-visibility:auto]"
-									>
-										<MapCard
-											map={map}
-											areaSlug={map.area?.slug ?? areaSlug ?? ""}
-											eager={offset + i < 10}
-										/>
-									</div>
+										map={map}
+										areaSlug={map.area?.slug ?? areaSlug ?? ""}
+										eager={offset + i < 10}
+									/>
 								))}
 							</div>
 						</section>
