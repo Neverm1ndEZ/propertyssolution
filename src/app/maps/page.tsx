@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
-import MapGrid from "@/components/MapGrid";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import ContactSection from "@/components/ContactSection";
 
@@ -18,9 +17,8 @@ export const metadata: Metadata = {
  * shortcuts up top, then one full-width block per region — heading, standfirst,
  * master plan, "Explore More" — each flipping up on scroll the way theirs do.
  *
- * Their page stops there. The searchable grid of every plan stays underneath,
- * because it is what makes this page reachable for "<sector> layout plan"
- * queries and it links all {ALL_MAPS.length} map pages from one place.
+ * Like theirs, it stops there: the per-area pages carry the searchable grid of
+ * every plan, so this page is a chooser, not a listing.
  */
 
 const AREA_COPY: Record<string, { standfirst: string; blurb: string }> = {
@@ -142,25 +140,12 @@ export default function AllMapsPage() {
 				);
 			})}
 
-			<div className="container-page py-12 sm:py-16">
-				<h2 className="text-fluid-h2 font-extrabold text-brand-950">
-					All {ALL_MAPS.length} Layout Plans
-				</h2>
-				<div className="mt-6">
-					<MapGrid
-						maps={ALL_MAPS}
-						columns={3}
-						searchLabel={`Search all ${ALL_MAPS.length} layout plans…`}
-					/>
-				</div>
-
-				<JsonLd
-					data={breadcrumbs([
-						{ name: "Home", path: "/" },
-						{ name: "Our Maps", path: "/maps" },
-					])}
-				/>
-			</div>
+			<JsonLd
+				data={breadcrumbs([
+					{ name: "Home", path: "/" },
+					{ name: "Our Maps", path: "/maps" },
+				])}
+			/>
 
 			<ContactSection />
 		</>
