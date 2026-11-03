@@ -100,9 +100,9 @@ function build(limit: number, ...groups: string[][]): string[] {
 const cross = (a: string[], b: string[], join = " in ") =>
 	a.flatMap((x) => b.map((y) => `${x}${join}${y}`));
 
-/** 300 site-wide terms, every page gets these. */
+/** The site-wide set every page carries. */
 export const BASE_KEYWORDS = build(
-	300,
+	600,
 	cross(ROLES, PLACES),
 	cross(ASSETS, PLACES),
 	cross(MAP_TERMS, PLACES),
@@ -111,6 +111,16 @@ export const BASE_KEYWORDS = build(
 	ROLES.map((r) => `${r} near me`),
 	PLACES.map((p) => `property in ${p}`),
 	PLACES.map((p) => `plots in ${p}`),
+	cross(ASSETS, INTENTS, " "),
+	cross(ROLES, INTENTS, " "),
+	cross(MAP_TERMS, INTENTS, " "),
+	PLACES.flatMap((p) => ASSETS.map((a) => `${a} ${p}`)),
+	PLACES.flatMap((p) => ROLES.map((r) => `${p} ${r}`)),
+	PLACES.flatMap((p) => INTENTS.map((i) => `plots in ${p} ${i}`)),
+	PLACES.map((p) => `buy property in ${p}`),
+	PLACES.map((p) => `sell property in ${p}`),
+	PLACES.map((p) => `${p} real estate`),
+	PLACES.map((p) => `${p} property market`),
 );
 
 /**
@@ -132,6 +142,11 @@ export function keywordsFor(subject: string, region = SITE.region): string[] {
 		ASSETS.slice(0, 8).map((a) => `${a} in ${pair}`),
 		INTENTS.map((i) => `${s} plot ${i}`),
 		INTENTS.map((i) => `${s} property ${i}`),
+		INTENTS.map((i) => `${pair} ${i}`),
+		ASSETS.map((a) => `${a} ${s}`),
+		ROLES.map((r) => `${s} ${r}`),
+		MAP_TERMS.map((m) => `${m} for ${s}`),
+		MAP_TERMS.map((m) => `${m} of ${s}`),
 		[
 			`${s} plot size`,
 			`${s} plot number`,

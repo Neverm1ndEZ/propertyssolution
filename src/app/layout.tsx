@@ -18,6 +18,8 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
 	metadataBase: new URL(SITE_URL),
+	// The home page had no canonical at all; every other route sets its own.
+	alternates: { canonical: "/" },
 	title: {
 		default: `${SITE.title} | ${SITE_NAME}`,
 		template: `%s | ${SITE_NAME}`,
