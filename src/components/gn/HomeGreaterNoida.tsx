@@ -28,10 +28,28 @@ const DEALS_IN = [
 	{ icon: Store, label: "Commercial" },
 ];
 
+// Each authority links straight to the maps it publishes, the way Shiva
+// Associates do it (their logos link to /greater-noida, /noida-map and
+// /yamuna-expressway-maps).
 const AUTHORITIES = [
-	{ name: "GNIDA", full: "Greater Noida Industrial Development Authority" },
-	{ name: "NOIDA", full: "New Okhla Industrial Development Authority" },
-	{ name: "YEIDA", full: "Yamuna Expressway Industrial Development Authority" },
+	{
+		name: "GNIDA",
+		full: "Greater Noida Industrial Development Authority",
+		logo: "/site-assets/authorities/gnida.avif",
+		href: "/maps/greater-noida",
+	},
+	{
+		name: "NOIDA",
+		full: "New Okhla Industrial Development Authority",
+		logo: "/site-assets/authorities/noida.avif",
+		href: "/maps/noida-extension",
+	},
+	{
+		name: "YEIDA",
+		full: "Yamuna Expressway Industrial Development Authority",
+		logo: "/site-assets/authorities/yeida.avif",
+		href: "/maps/yamuna-expressway",
+	},
 ];
 
 const WHY = [
@@ -119,14 +137,28 @@ export default function HomeGreaterNoida() {
 				</h2>
 				<ul className="mt-8 grid gap-5 sm:grid-cols-3">
 					{AUTHORITIES.map((a) => (
-						<li
-							key={a.name}
-							className="rounded-xl bg-white p-6 text-center shadow-(--shadow-soft) ring-1 ring-sand-200"
-						>
-							<p className="text-2xl font-extrabold tracking-tight text-brand-700">
-								{a.name}
-							</p>
-							<p className="mt-2 text-sm text-brand-900/65">{a.full}</p>
+						<li key={a.name}>
+							<Link
+								href={a.href}
+								className="block h-full rounded-xl bg-white p-6 text-center shadow-(--shadow-soft) ring-1 ring-sand-200 transition hover:ring-brand-300 hover:shadow-lg focus-visible:ring-2 focus-visible:ring-brand-600"
+							>
+								{/* Fixed-height box: the three crests have different aspect
+								    ratios, and it also reserves the space so nothing shifts. */}
+								<span className="flex h-20 items-center justify-center">
+									{/* eslint-disable-next-line @next/next/no-img-element -- already-optimised avif, 9-26KB. */}
+									<img
+										src={a.logo}
+										alt={`${a.full} logo`}
+										loading="lazy"
+										decoding="async"
+										className="max-h-full w-auto max-w-44 object-contain"
+									/>
+								</span>
+								<p className="mt-4 text-2xl font-extrabold tracking-tight text-brand-700">
+									{a.name}
+								</p>
+								<p className="mt-2 text-sm text-brand-900/65">{a.full}</p>
+							</Link>
 						</li>
 					))}
 				</ul>

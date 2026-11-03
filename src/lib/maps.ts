@@ -985,6 +985,13 @@ export const mapData = {
 				"Authority layout plan for SECTOR 18 PART-I in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
+			id: "sector-18-part-j",
+			name: "SECTOR 18 PART-J",
+			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-J.jpg",
+			description:
+				"Authority layout plan for SECTOR 18 PART-J in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+		},
+		{
 			id: "sector-18-pocket-7d",
 			name: "SECTOR 18 POCKET-7D",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 POCKET-7D.jpg",
