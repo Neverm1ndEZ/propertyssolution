@@ -10,7 +10,6 @@ import {
 	Users,
 } from "lucide-react";
 import Hero from "@/components/Hero";
-import MapCard from "@/components/MapCard";
 import ContactSection from "@/components/ContactSection";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
 import { thumbUrl } from "@/lib/map-utils";
@@ -95,15 +94,6 @@ const EXPERTISE = [
 		body: "Shops and retail frontage on the commercial belts, warehousing and factory plots in the industrial sectors, with transfer paperwork handled.",
 	},
 ];
-
-/**
- * Featured maps come off the top of this site's lead region, in order. A random
- * pick reshuffled on every build and surfaced Yamuna villages on the Greater
- * Noida home page, which is not what "featured" means to anyone reading it.
- */
-const FEATURED = ALL_MAPS.filter(
-	(m) => m.area.slug === AREA_LIST[0].slug,
-).slice(0, 8);
 
 export default function HomeGreaterNoida() {
 	return (
@@ -243,22 +233,6 @@ export default function HomeGreaterNoida() {
 				</div>
 			</section>
 
-			{/* Featured maps + enquiry sidebar */}
-			<section className="container-page py-14 lg:py-16">
-				<div>
-					<h2 className="text-fluid-h2 font-extrabold text-brand-950">
-						Featured Layout Maps
-					</h2>
-					<div className="mt-7 grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4">
-						{FEATURED.map((map) => (
-							<MapCard key={map.id} map={map} areaSlug={map.area.slug} />
-						))}
-					</div>
-				</div>
-			</section>
-
-			<ContactSection />
-
 			{/* Why Choose Us */}
 			<section className="bg-brand-950 py-14 text-white sm:py-16">
 				<div className="container-page">
@@ -311,7 +285,6 @@ export default function HomeGreaterNoida() {
 					))}
 				</ul>
 			</section>
-
 			{/* Visit Us */}
 			<section className="bg-sand-100 py-14 sm:py-16">
 				<div className="container-page">
@@ -332,6 +305,7 @@ export default function HomeGreaterNoida() {
 					</div>
 				</div>
 			</section>
+			<ContactSection />
 		</>
 	);
 }

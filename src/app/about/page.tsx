@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { keywordsFor, pageKeywords } from "@/lib/seo";
 import { BadgeCheck, Building2, Handshake, ShieldCheck } from "lucide-react";
 import ContactSection from "@/components/ContactSection";
-import { HOURS } from "@/lib/site";
+import { HOURS, SITE_NAME } from "@/lib/site";
 import { SITE } from "@/config/sites";
 
 export const metadata: Metadata = {
 	title: "About us",
 	description:
 		"Property Solutions has been handling the sale and purchase of residential, commercial and industrial plots across Greater Noida and the Yamuna Expressway since 2009.",
+	keywords: pageKeywords(keywordsFor("about " + SITE_NAME)),
 	alternates: { canonical: "/about" },
 };
 

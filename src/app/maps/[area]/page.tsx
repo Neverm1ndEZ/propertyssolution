@@ -6,6 +6,7 @@ import MapGrid from "@/components/MapGrid";
 import ContactSection from "@/components/ContactSection";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import { AREA_LIST, getArea, getMaps } from "@/lib/maps";
+import { keywordsFor, pageKeywords } from "@/lib/seo";
 
 export const dynamicParams = false;
 
@@ -23,6 +24,7 @@ export async function generateMetadata({
 	return {
 		title: `${area.name} layout plans`,
 		description: `Browse and download all ${area.count} authority layout plans for ${area.name}.`,
+		keywords: pageKeywords(keywordsFor(area.name, area.name)),
 		alternates: { canonical: `/maps/${area.slug}` },
 	};
 }

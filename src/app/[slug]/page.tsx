@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowRight, Check, ChevronRight } from "lucide-react";
 import { AREAS, getMaps } from "@/lib/maps";
 import { LANDING_PAGES } from "@/config/landing";
+import { keywordsFor, pageKeywords } from "@/lib/seo";
 import MapCard from "@/components/MapCard";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import ContactSection from "@/components/ContactSection";
@@ -34,6 +35,7 @@ export async function generateMetadata({
 		// The root layout template already appends the site name.
 		title: page.title,
 		description: page.description,
+		keywords: pageKeywords(keywordsFor(page.h1)),
 		alternates: { canonical: `/${page.slug}` },
 	};
 }

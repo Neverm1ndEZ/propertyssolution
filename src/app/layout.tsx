@@ -8,6 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { ADDRESS, EMAIL, PHONE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { AREA_LIST } from "@/lib/maps";
 import { SITE } from "@/config/sites";
+import { keywordsFor, pageKeywords } from "@/lib/seo";
 
 const jakarta = Plus_Jakarta_Sans({
 	variable: "--font-plus-jakarta",
@@ -22,7 +23,9 @@ export const metadata: Metadata = {
 		template: `%s | ${SITE_NAME}`,
 	},
 	description: SITE.description,
-	keywords: SITE.keywords,
+	// The site-wide default: the region's own terms, the client's keyword set, then
+	// the 300 shared ones. A page with its own keywords replaces this entirely.
+	keywords: pageKeywords([...keywordsFor(SITE.region), ...SITE.keywords]),
 	openGraph: {
 		type: "website",
 		siteName: SITE_NAME,
