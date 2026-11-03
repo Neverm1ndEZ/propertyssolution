@@ -93,7 +93,7 @@ export default function MapGrid({
 			</p>
 
 			{results.length === 0 ? (
-				<p className="py-24 text-center text-brand-900/60">
+				<p className="py-16 text-center text-brand-900/60">
 					No layout plan matches “{query.trim()}”.
 				</p>
 			) : (

@@ -101,7 +101,7 @@ export default function HomeGreaterNoida() {
 			<Hero />
 
 			{/* What We Do As ... */}
-			<section className="container-page grid items-center gap-10 py-14 lg:grid-cols-2 lg:py-20">
+			<section className="container-page grid items-center gap-10 py-10 lg:grid-cols-2 lg:py-10">
 				<div>
 					<p className="text-sm font-bold tracking-widest text-brand-600 uppercase">
 						What We Do As
@@ -134,7 +134,7 @@ export default function HomeGreaterNoida() {
 			</section>
 
 			{/* We Deals In */}
-			<section className="bg-brand-950 py-12 text-white sm:py-16">
+			<section className="bg-brand-950 py-10 text-white sm:py-12">
 				<div className="container-page grid items-center gap-8 sm:grid-cols-[auto_1fr]">
 					<h2 className="text-fluid-h2 font-extrabold">
 						We Deal
@@ -154,7 +154,7 @@ export default function HomeGreaterNoida() {
 			</section>
 
 			{/* Development authorities */}
-			<section className="container-page py-14 sm:py-16">
+			<section className="container-page py-10 sm:py-12">
 				<h2 className="text-fluid-h2 font-extrabold text-balance text-brand-950">
 					Working with the Top Development Authorities.
 				</h2>
@@ -188,7 +188,7 @@ export default function HomeGreaterNoida() {
 			</section>
 
 			{/* Our Layout Maps */}
-			<section className="bg-sand-100 py-14 sm:py-16">
+			<section className="bg-sand-100 py-10 sm:py-12">
 				<div className="container-page">
 					<h2 className="text-fluid-h2 text-center font-extrabold text-brand-950">
 						Our Layout Maps:
@@ -234,7 +234,7 @@ export default function HomeGreaterNoida() {
 			</section>
 
 			{/* Why Choose Us */}
-			<section className="bg-brand-950 py-14 text-white sm:py-16">
+			<section className="bg-brand-950 py-10 text-white sm:py-12">
 				<div className="container-page">
 					<h2 className="text-fluid-h2 font-extrabold text-balance">
 						Why Choose Us As {SITE.title.split("|")[0].trim()}?
@@ -258,7 +258,7 @@ export default function HomeGreaterNoida() {
 			</section>
 
 			{/* Our Expertise As … */}
-			<section className="container-page py-14 sm:py-16">
+			<section className="container-page py-10 sm:py-12">
 				<p className="text-xs font-semibold tracking-widest text-brand-600 uppercase">
 					Our expertise as
 				</p>
@@ -286,7 +286,7 @@ export default function HomeGreaterNoida() {
 				</ul>
 			</section>
 			{/* Visit Us */}
-			<section className="bg-sand-100 py-14 sm:py-16">
+			<section className="bg-sand-100 py-10 sm:py-12">
 				<div className="container-page">
 					<h2 className="text-fluid-h2 font-extrabold text-balance text-brand-950">
 						Visit us — we are right here in {SITE.region}

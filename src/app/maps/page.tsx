@@ -46,7 +46,7 @@ const AREA_COPY: Record<string, { standfirst: string; blurb: string }> = {
 export default function AllMapsPage() {
 	return (
 		<>
-			<div className="container-page py-8 sm:py-10">
+			<div className="container-page py-7 sm:py-9">
 				<nav aria-label="Breadcrumb" className="mb-6">
 					<ol className="flex items-center gap-1.5 text-sm text-brand-900/55">
 						<li>
@@ -94,7 +94,7 @@ export default function AllMapsPage() {
 					<section
 						key={area.slug}
 						id={area.slug}
-						className={`scroll-mt-24 py-12 sm:py-16 ${i % 2 ? "bg-sand-100" : ""}`}
+						className={`scroll-mt-24 py-10 sm:py-12 ${i % 2 ? "bg-sand-100" : ""}`}
 					>
 						<div className="container-page reveal-flip">
 							<h2 className="text-fluid-h2 text-center font-extrabold text-balance text-brand-950">

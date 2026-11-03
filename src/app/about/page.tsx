@@ -39,7 +39,7 @@ const OFFERINGS = [
 export default function AboutPage() {
 	return (
 		<>
-			<div className="container-page py-10 lg:py-14">
+			<div className="container-page py-8 lg:py-12">
 			<div className="max-w-3xl">
 				<p className="text-xs font-semibold tracking-widest text-brand-600 uppercase">
 					Since 2009

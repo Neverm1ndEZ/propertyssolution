@@ -11,7 +11,7 @@ import { SITE } from "@/config/sites";
 export default function ContactSection() {
 	return (
 		<section className="bg-brand-950 text-white" aria-labelledby="get-in-touch">
-			<div className="container-page py-14 sm:py-16">
+			<div className="container-page py-10 sm:py-12">
 				<p className="text-center text-3xl font-extrabold tracking-tight sm:text-4xl">
 					{SITE_NAME}
 				</p>

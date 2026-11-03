@@ -66,7 +66,7 @@ export default function MapArticle({
 	const where = `${mapName}, ${areaName}`;
 
 	return (
-		<article className="mt-12 border-t border-sand-200 pt-10">
+		<article className="mt-10 border-t border-sand-200 pt-8">
 			<h2 className="text-fluid-h2 font-extrabold text-balance text-brand-950">
 				Property Dealer in {where} — {SITE_NAME}
 			</h2>

@@ -7,7 +7,7 @@ export const metadata = { title: "Page not found" };
 
 export default function NotFound() {
 	return (
-		<div className="container-page flex flex-col items-center py-20 text-center lg:py-28">
+		<div className="container-page flex flex-col items-center py-16 text-center lg:py-20">
 			<p className="text-xs font-semibold tracking-widest text-brand-600 uppercase">
 				Error 404
 			</p>
