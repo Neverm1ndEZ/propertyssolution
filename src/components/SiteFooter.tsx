@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import { AREA_LIST } from "@/lib/maps";
-import { SITE } from "@/config/sites";
-import { landingPagesFor } from "@/config/landing";
+import { LANDING_PAGES } from "@/config/landing";
 import {
 	ADDRESS,
 	EMAIL,
@@ -53,7 +52,7 @@ export default function SiteFooter() {
 						What we deal in
 					</h3>
 					<ul className="mt-4 space-y-2.5 text-sm">
-						{landingPagesFor(SITE.key).map((p) => (
+						{LANDING_PAGES.map((p) => (
 							<li key={p.slug}>
 								<Link
 									href={`/${p.slug}`}

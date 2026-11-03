@@ -1,8 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-	// Each site builds into its own directory so the two can run side by side.
-	distDir: process.env.NEXT_DIST_DIR || ".next",
 	images: {
 		// Card thumbnails are prebuilt webp served straight from the CDN, so the
 		// optimiser only ever sees the one full-res scan on a detail page.

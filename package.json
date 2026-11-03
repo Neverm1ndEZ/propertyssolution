@@ -1,20 +1,15 @@
 {
-	"name": "property-solutions",
+	"name": "propertyssolution",
 	"version": "0.1.0",
 	"private": true,
 	"packageManager": "pnpm@11.23.0",
 	"scripts": {
-		"dev": "node scripts/site.mjs greater-noida dev --turbopack",
-		"dev:gn": "node scripts/site.mjs greater-noida dev --turbopack",
-		"dev:ym": "node scripts/site.mjs yamuna dev --turbopack",
-		"build": "node scripts/site.mjs greater-noida build",
-		"build:gn": "node scripts/site.mjs greater-noida build",
-		"build:ym": "node scripts/site.mjs yamuna build",
-		"start:gn": "node scripts/site.mjs greater-noida start",
-		"start:ym": "node scripts/site.mjs yamuna start",
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
 		"lint": "eslint",
 		"typecheck": "tsc --noEmit",
-		"check": "node scripts/check-all.mjs",
+		"check": "node --experimental-strip-types scripts/check-maps.mjs",
 		"img": "node scripts/optimize-images.mjs"
 	},
 	"dependencies": {

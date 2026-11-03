@@ -3,8 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, Check, ChevronRight } from "lucide-react";
 import { AREAS, getMaps } from "@/lib/maps";
-import { SITE } from "@/config/sites";
-import { landingPagesFor } from "@/config/landing";
+import { LANDING_PAGES } from "@/config/landing";
 import MapCard from "@/components/MapCard";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import ContactSection from "@/components/ContactSection";
@@ -17,7 +16,7 @@ import ContactSection from "@/components/ContactSection";
 
 export const dynamicParams = false;
 
-const pages = landingPagesFor(SITE.key);
+const pages = LANDING_PAGES;
 const bySlug = new Map(pages.map((p) => [p.slug, p]));
 
 export function generateStaticParams() {
