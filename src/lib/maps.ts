@@ -1323,16 +1323,22 @@ function compareMaps(a: MapItem, b: MapItem, sectorsLead: boolean): number {
 }
 
 /**
- * Heading each category sits under in the grid. Indexes match the ranks in
- * CATEGORY / categoryRank, so the labels and the sort can never drift apart.
+ * Heading each category sits under, named the way Shiva Associates name theirs:
+ * their Greater Noida page splits into "Residential Map Greater Noida" and
+ * "Industrial Map Greater Noida", and they caption the region plan "Master Plan
+ * Greater Noida". Indexes match the ranks in CATEGORY / categoryRank, so the
+ * labels and the sort cannot drift apart.
+ *
+ * Ranks 0 and 1 share a label on purpose — numbered sectors and named sectors
+ * are both residential, so they run together as one block, as on their pages.
  */
 const GROUP_LABEL = [
-	"Sector layout plans",
-	"Residential sectors",
-	"Industrial areas",
-	"Institutional & Knowledge Park",
-	"Villages & abadi plans",
-	"Master plans",
+	"Residential Map",
+	"Residential Map",
+	"Industrial Map",
+	"Institutional Map",
+	"Village & Abadi Map",
+	"Master Plan",
 ];
 
 const sorted = (key: AreaKey): MapItem[] => {
@@ -1340,7 +1346,10 @@ const sorted = (key: AreaKey): MapItem[] => {
 	const lead = sectorsDominate(maps);
 	return [...maps]
 		.sort((a, b) => compareMaps(a, b, lead))
-		.map((m) => ({ ...m, group: GROUP_LABEL[categoryRank(m.name, lead)] }));
+		.map((m) => ({
+			...m,
+			group: `${GROUP_LABEL[categoryRank(m.name, lead)]} ${AREAS[key].name}`,
+		}));
 };
 
 const ORDERED = Object.fromEntries(

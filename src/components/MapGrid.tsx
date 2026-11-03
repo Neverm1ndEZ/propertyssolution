@@ -105,10 +105,9 @@ export default function MapGrid({
 					return (
 						<section key={section.group ?? s} className={s ? "mt-12" : ""}>
 							{section.group && (
-								<h2 className="mb-5 flex items-center gap-3 text-sm font-semibold tracking-widest text-brand-700 uppercase">
+								<h2 className="mb-5 flex items-baseline gap-3 text-xl font-extrabold tracking-tight text-brand-950 sm:text-2xl">
 									{section.group}
-									<span className="h-px flex-1 bg-sand-300" />
-									<span className="text-xs font-medium text-brand-900/45 tabular-nums">
+									<span className="text-sm font-medium text-brand-900/45 tabular-nums">
 										{section.items.length}
 									</span>
 								</h2>
