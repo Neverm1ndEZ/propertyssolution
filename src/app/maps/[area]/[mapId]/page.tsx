@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, ChevronRight, Download, Maximize2 } from "lucide-react";
-import { AREA_LIST, getArea, getMaps, mapData, relatedMaps } from "@/lib/maps";
+import { ChevronRight, Download, Maximize2 } from "lucide-react";
+import { AREA_LIST, getArea, getMaps, mapData } from "@/lib/maps";
 import { thumbUrl } from "@/lib/map-utils";
 import { localityFor, mapEmbedUrl } from "@/lib/locality";
 import { SITE_NAME } from "@/lib/site";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
-import RelatedMaps from "@/components/RelatedMaps";
 import ContactSection from "@/components/ContactSection";
 
 export const dynamicParams = false;
@@ -55,8 +54,6 @@ export default async function MapDetailPage({
 	if (index === -1) notFound();
 
 	const map = maps[index];
-	const prev = maps[index - 1];
-	const next = maps[index + 1];
 	const locality = localityFor(area.key);
 
 	return (
@@ -203,56 +200,6 @@ export default async function MapDetailPage({
 						className="block h-[22rem] w-full border-4 border-t-0 border-brand-800 sm:h-[28rem]"
 					/>
 				</section>
-
-				<nav
-					aria-label="Nearby layout plans"
-					className="mt-10 grid gap-3 sm:grid-cols-2"
-				>
-					{prev ? (
-						<Link
-							href={`/maps/${slug}/${prev.id}`}
-							rel="prev"
-							className="group flex items-center gap-3 rounded border border-sand-200 bg-white p-4 transition-colors hover:border-brand-400"
-						>
-							<ArrowLeft
-								aria-hidden
-								className="size-4 shrink-0 text-brand-600 transition-transform group-hover:-translate-x-1"
-							/>
-							<span className="min-w-0">
-								<span className="block text-xs text-brand-900/45">Previous</span>
-								<span className="line-clamp-1 text-sm font-medium text-brand-950">
-									{prev.name}
-								</span>
-							</span>
-						</Link>
-					) : (
-						<span />
-					)}
-					{next && (
-						<Link
-							href={`/maps/${slug}/${next.id}`}
-							rel="next"
-							className="group flex items-center justify-end gap-3 rounded border border-sand-200 bg-white p-4 text-right transition-colors hover:border-brand-400 sm:col-start-2"
-						>
-							<span className="min-w-0">
-								<span className="block text-xs text-brand-900/45">Next</span>
-								<span className="line-clamp-1 text-sm font-medium text-brand-950">
-									{next.name}
-								</span>
-							</span>
-							<ArrowRight
-								aria-hidden
-								className="size-4 shrink-0 text-brand-600 transition-transform group-hover:translate-x-1"
-							/>
-						</Link>
-					)}
-				</nav>
-
-				<RelatedMaps
-					maps={relatedMaps(slug, mapId)}
-					areaSlug={slug}
-					areaName={area.name}
-				/>
 
 				<JsonLd
 					data={breadcrumbs([
