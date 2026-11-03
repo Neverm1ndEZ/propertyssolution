@@ -46,6 +46,19 @@ export default function MapGrid({
 		return maps.filter((m) => m.name.toLowerCase().includes(q));
 	}, [maps, deferred]);
 
+	// The list arrives already ordered by category, so a run of equal `group`
+	// values is a section — no second sort, and a filtered list just yields
+	// shorter runs with the empty categories gone.
+	const sections = useMemo(() => {
+		const out: { group?: string; items: GridItem[] }[] = [];
+		for (const m of results) {
+			const last = out.at(-1);
+			if (last && last.group === m.group) last.items.push(m);
+			else out.push({ group: m.group, items: [m] });
+		}
+		return out;
+	}, [results]);
+
 	return (
 		<>
 			<div className="sticky top-[var(--header-h,8rem)] z-30 -mx-4 mb-8 bg-sand-50/85 px-4 py-3 backdrop-blur-md sm:-mx-6 sm:px-6">
@@ -84,26 +97,45 @@ export default function MapGrid({
 					No layout plan matches “{query.trim()}”.
 				</p>
 			) : (
-				<div
-					className={`grid grid-cols-2 gap-4 sm:gap-5 ${
-						columns === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"
-					}`}
-				>
-					{results.map((map, i) => (
-						// content-visibility lets the browser skip layout/paint for
-						// offscreen cards — the difference between smooth and janky at 179.
-						<div
-							key={map.id}
-							className="h-full [contain-intrinsic-size:auto_320px] [content-visibility:auto]"
-						>
-							<MapCard
-								map={map}
-								areaSlug={map.area?.slug ?? areaSlug ?? ""}
-								eager={i < 10}
-							/>
-						</div>
-					))}
-				</div>
+				sections.map((section, s) => {
+					// Index across the whole list, so only the real first screen is eager.
+					const offset = sections
+						.slice(0, s)
+						.reduce((n, x) => n + x.items.length, 0);
+					return (
+						<section key={section.group ?? s} className={s ? "mt-12" : ""}>
+							{section.group && (
+								<h2 className="mb-5 flex items-center gap-3 text-sm font-semibold tracking-widest text-brand-700 uppercase">
+									{section.group}
+									<span className="h-px flex-1 bg-sand-300" />
+									<span className="text-xs font-medium text-brand-900/45 tabular-nums">
+										{section.items.length}
+									</span>
+								</h2>
+							)}
+							<div
+								className={`grid grid-cols-2 gap-4 sm:gap-5 ${
+									columns === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"
+								}`}
+							>
+								{section.items.map((map, i) => (
+									// content-visibility lets the browser skip layout/paint for
+									// offscreen cards — smooth rather than janky at 177.
+									<div
+										key={map.id}
+										className="h-full [contain-intrinsic-size:auto_320px] [content-visibility:auto]"
+									>
+										<MapCard
+											map={map}
+											areaSlug={map.area?.slug ?? areaSlug ?? ""}
+											eager={offset + i < 10}
+										/>
+									</div>
+								))}
+							</div>
+						</section>
+					);
+				})
 			)}
 		</>
 	);

@@ -1322,10 +1322,25 @@ function compareMaps(a: MapItem, b: MapItem, sectorsLead: boolean): number {
 	return natural(a.name, b.name);
 }
 
+/**
+ * Heading each category sits under in the grid. Indexes match the ranks in
+ * CATEGORY / categoryRank, so the labels and the sort can never drift apart.
+ */
+const GROUP_LABEL = [
+	"Sector layout plans",
+	"Residential sectors",
+	"Industrial areas",
+	"Institutional & Knowledge Park",
+	"Villages & abadi plans",
+	"Master plans",
+];
+
 const sorted = (key: AreaKey): MapItem[] => {
 	const maps = mapData[key] as MapItem[];
 	const lead = sectorsDominate(maps);
-	return [...maps].sort((a, b) => compareMaps(a, b, lead));
+	return [...maps]
+		.sort((a, b) => compareMaps(a, b, lead))
+		.map((m) => ({ ...m, group: GROUP_LABEL[categoryRank(m.name, lead)] }));
 };
 
 const ORDERED = Object.fromEntries(

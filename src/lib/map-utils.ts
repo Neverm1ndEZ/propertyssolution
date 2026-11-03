@@ -9,6 +9,8 @@ export type MapItem = {
 	name: string;
 	imageUrl: string;
 	description: string;
+	/** Category heading this map sits under; set by the ordering in `@/lib/maps`. */
+	group?: string;
 };
 
 export type AreaSummary = {
