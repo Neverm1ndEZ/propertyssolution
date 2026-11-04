@@ -9,7 +9,7 @@ import { localityFor, mapEmbedUrl } from "@/lib/locality";
 import { SITE_NAME } from "@/lib/site";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import MapArticle from "@/components/MapArticle";
-import { keywordsFor, pageKeywords } from "@/lib/seo";
+import { keyPointsFor, keywordsFor, pageKeywords } from "@/lib/seo";
 import ContactSection from "@/components/ContactSection";
 
 export const dynamicParams = false;
@@ -89,12 +89,13 @@ export default async function MapDetailPage({
 				</nav>
 
 				<h1 className="text-fluid-h2 font-extrabold text-balance text-brand-950">
-					{map.name}, {area.name}
+					Layout Plan of {map.name}, {area.name} — HD Map
 				</h1>
 
 				{/* Caption bar above the plan, as on their sector pages. */}
 				<h2 className="mt-6 bg-brand-800 px-4 py-3 text-center text-sm font-semibold text-white sm:text-base">
-					Layout Plan For {map.name}, {area.name}. Presented By — {SITE_NAME}
+					Layout Plan of {map.name}, {area.name} — HD Map. Presented By —{" "}
+					{SITE_NAME}
 				</h2>
 
 				<figure className="border-4 border-t-0 border-brand-800 bg-white">
@@ -164,6 +165,40 @@ export default async function MapDetailPage({
 					<p className="mt-2 text-xs text-brand-900/45">
 						Key landmarks across {area.name}. Distances vary by pocket — call us
 						for specifics on any plot.
+					</p>
+				</section>
+
+				{/*
+				 * Client brief (Nov 2026): every map page must carry the sector's own
+				 * search phrases in the body, right under the locality block — "plots
+				 * for sale in <sector>", "best property dealer in <sector>", and the
+				 * "we also deal in" line. Generated from the map name so all 177 pages
+				 * get it without per-page copy.
+				 */}
+				<section className="mt-7" aria-labelledby="key-points">
+					<h3
+						id="key-points"
+						className="bg-brand-800 px-4 py-2.5 text-center text-sm font-bold tracking-wide text-white uppercase"
+					>
+						Key Points — {map.name}, {area.name}
+					</h3>
+					<ul className="grid gap-px bg-sand-200 sm:grid-cols-2 lg:grid-cols-3">
+						{keyPointsFor(map.name, area.name).map((point) => (
+							<li
+								key={point}
+								className="flex gap-2 bg-white p-4 text-sm text-brand-900/75"
+							>
+								<span aria-hidden className="text-brand-500">
+									•
+								</span>
+								{point}
+							</li>
+						))}
+					</ul>
+					<p className="mt-3 leading-relaxed text-brand-900/75">
+						We also deal in {map.name} properties and plots — residential,
+						commercial and industrial — across {area.name}. For plots for sale
+						in {map.name}, current rates or a site visit, call {SITE_NAME}.
 					</p>
 				</section>
 

@@ -166,3 +166,21 @@ export function keywordsFor(subject: string, region = SITE.region): string[] {
  */
 export const pageKeywords = (custom: string[]): string[] =>
 	build(Number.MAX_SAFE_INTEGER, custom, BASE_KEYWORDS);
+
+/**
+ * The handful of phrases the client wants rendered on every map page itself,
+ * not just in the keywords tag: "plots for sale in <sector>", "best property
+ * dealer in <sector>", and the "we also deal in" line. Same shape for all 177
+ * maps, generated from the map name.
+ */
+export function keyPointsFor(subject: string, region = SITE.region): string[] {
+	const s = subject.replace(/\s+/g, " ").trim();
+	return [
+		`Plots for sale in ${s}`,
+		`Property dealer in ${s}`,
+		`Best property dealer in ${s}, ${region}`,
+		`Top property dealers in ${s}`,
+		`${s} HD map and layout plan download`,
+		`We also deal in ${s} properties and plots`,
+	];
+}

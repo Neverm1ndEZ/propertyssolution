@@ -16,7 +16,7 @@ export default function ContactSection() {
 					{SITE_NAME}
 				</p>
 				<p className="mt-1 text-center text-base text-brand-300 underline underline-offset-4">
-					{SITE.title.split("|")[0].trim()}
+					{SITE.tagline}
 				</p>
 
 				<h2

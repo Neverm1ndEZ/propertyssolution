@@ -789,25 +789,25 @@ export const mapData = {
 				"MASTER PLAN YAMUNA EXPRESSWAY 2041 PHASE-1 — the full authority master plan covering sector boundaries, land-use zoning, road network and planned development. Free to view and download.",
 		},
 		{
-			id: "part-sector-17-abadi-village-dhanauri",
-			name: "PART SECTOR-17 ABADI VILLAGE DHANAURI",
+			id: "pocket-sector-17-abadi-village-dhanauri",
+			name: "POCKET SECTOR-17 ABADI VILLAGE DHANAURI",
 			imageUrl: "/maps/yamuna-expressway/PART SECTOR-17 ABADI VILLAGE DHANAURI.jpg",
 			description:
-				"PART SECTOR-17 ABADI VILLAGE DHANAURI — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
+				"POCKET SECTOR-17 ABADI VILLAGE DHANAURI — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
-			id: "part-sector-18-abadi-rampur-bangar-sadar",
-			name: "PART SECTOR-18 ABADI RAMPUR BANGAR SADAR",
+			id: "pocket-sector-18-abadi-rampur-bangar-sadar",
+			name: "POCKET SECTOR-18 ABADI RAMPUR BANGAR SADAR",
 			imageUrl: "/maps/yamuna-expressway/PART SECTOR-18 ABADI RAMPUR BANGAR SADAR.jpg",
 			description:
-				"PART SECTOR-18 ABADI RAMPUR BANGAR SADAR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
+				"POCKET SECTOR-18 ABADI RAMPUR BANGAR SADAR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
-			id: "part-sector-20-abadi-village-parsaul-block-w",
-			name: "PART SECTOR-20 ABADI VILLAGE PARSAUL BLOCK W",
+			id: "pocket-sector-20-abadi-village-parsaul-block-w",
+			name: "POCKET SECTOR-20 ABADI VILLAGE PARSAUL BLOCK W",
 			imageUrl: "/maps/yamuna-expressway/PART SECTOR-20 ABADI VILLAGE PARSAUL BLOCK W.jpg",
 			description:
-				"PART SECTOR-20 ABADI VILLAGE PARSAUL BLOCK W — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
+				"POCKET SECTOR-20 ABADI VILLAGE PARSAUL BLOCK W — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "ronija-block-a-and-niloni-shahpur-block-b",
@@ -831,165 +831,165 @@ export const mapData = {
 				"SECTOR 18 AND 20 — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-1a",
-			name: "SECTOR 18 PART-1A",
+			id: "sector-18-pocket-1a",
+			name: "SECTOR 18 POCKET-1A",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-1A.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-1A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-1A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-1b",
-			name: "SECTOR 18 PART-1B",
+			id: "sector-18-pocket-1b",
+			name: "SECTOR 18 POCKET-1B",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-1B.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-1B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-1B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-2a-and-2c",
-			name: "SECTOR 18 PART-2A AND 2C",
+			id: "sector-18-pocket-2a-and-2c",
+			name: "SECTOR 18 POCKET-2A AND 2C",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-2A AND 2C.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-2A AND 2C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-2A AND 2C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-2b",
-			name: "SECTOR 18 PART-2B",
+			id: "sector-18-pocket-2b",
+			name: "SECTOR 18 POCKET-2B",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-2B.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-2B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-2B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-3a",
-			name: "SECTOR 18 PART-3A",
+			id: "sector-18-pocket-3a",
+			name: "SECTOR 18 POCKET-3A",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-3A.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-3A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-3A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-3b",
-			name: "SECTOR 18 PART-3B",
+			id: "sector-18-pocket-3b",
+			name: "SECTOR 18 POCKET-3B",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-3B.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-3B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-3B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-3c",
-			name: "SECTOR 18 PART-3C",
+			id: "sector-18-pocket-3c",
+			name: "SECTOR 18 POCKET-3C",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-3C.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-3C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-3C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-3d",
-			name: "SECTOR 18 PART-3D",
+			id: "sector-18-pocket-3d",
+			name: "SECTOR 18 POCKET-3D",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-3D.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-3D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-3D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-4a",
-			name: "SECTOR 18 PART-4A",
+			id: "sector-18-pocket-4a",
+			name: "SECTOR 18 POCKET-4A",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-4A.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-4A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-4A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-5a",
-			name: "SECTOR 18 PART-5A",
+			id: "sector-18-pocket-5a",
+			name: "SECTOR 18 POCKET-5A",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-5A.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-5A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-5A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-5b",
-			name: "SECTOR 18 PART-5B",
+			id: "sector-18-pocket-5b",
+			name: "SECTOR 18 POCKET-5B",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-5B.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-5B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-5B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-5c",
-			name: "SECTOR 18 PART-5C",
+			id: "sector-18-pocket-5c",
+			name: "SECTOR 18 POCKET-5C",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-5C.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-5C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-5C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-5d",
-			name: "SECTOR 18 PART-5D",
+			id: "sector-18-pocket-5d",
+			name: "SECTOR 18 POCKET-5D",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-5D.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-5D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-5D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-6a",
-			name: "SECTOR 18 PART-6A",
+			id: "sector-18-pocket-6a",
+			name: "SECTOR 18 POCKET-6A",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-6A.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-6A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-6A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-6b",
-			name: "SECTOR 18 PART-6B",
+			id: "sector-18-pocket-6b",
+			name: "SECTOR 18 POCKET-6B",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-6B.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-6B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-6B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-6c",
-			name: "SECTOR 18 PART-6C",
+			id: "sector-18-pocket-6c",
+			name: "SECTOR 18 POCKET-6C",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-6C.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-6C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-6C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-6d",
-			name: "SECTOR 18 PART-6D",
+			id: "sector-18-pocket-6d",
+			name: "SECTOR 18 POCKET-6D",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-6D.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-6D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-6D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-7a-and-7e",
-			name: "SECTOR 18 PART-7A AND 7E",
+			id: "sector-18-pocket-7a-and-7e",
+			name: "SECTOR 18 POCKET-7A AND 7E",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-7A AND 7E.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-7A AND 7E in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-7A AND 7E in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-7b-and-7f",
-			name: "SECTOR 18 PART-7B AND 7F",
+			id: "sector-18-pocket-7b-and-7f",
+			name: "SECTOR 18 POCKET-7B AND 7F",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-7B AND 7F.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-7B AND 7F in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-7B AND 7F in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-7c-and-7d",
-			name: "SECTOR 18 PART-7C AND 7D",
+			id: "sector-18-pocket-7c-and-7d",
+			name: "SECTOR 18 POCKET-7C AND 7D",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-7C AND 7D.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-7C AND 7D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-7C AND 7D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-7e",
-			name: "SECTOR 18 PART-7E",
+			id: "sector-18-pocket-7e",
+			name: "SECTOR 18 POCKET-7E",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-7E.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-7E in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-7E in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-i",
-			name: "SECTOR 18 PART-I",
+			id: "sector-18-pocket-i",
+			name: "SECTOR 18 POCKET-I",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-I.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-I in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-I in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-18-part-j",
-			name: "SECTOR 18 PART-J",
+			id: "sector-18-pocket-j",
+			name: "SECTOR 18 POCKET-J",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-J.jpg",
 			description:
-				"Authority layout plan for SECTOR 18 PART-J in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 18 POCKET-J in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-7d",
@@ -1006,123 +1006,123 @@ export const mapData = {
 				"Authority layout plan for SECTOR 18 POCKET-8 in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-a",
-			name: "SECTOR 20 PART-A",
+			id: "sector-20-pocket-a",
+			name: "SECTOR 20 POCKET-A",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-A.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-b-and-c",
-			name: "SECTOR 20 PART-B AND C",
+			id: "sector-20-pocket-b-and-c",
+			name: "SECTOR 20 POCKET-B AND C",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-B AND C.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-B AND C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-B AND C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-b-and-c-ii",
-			name: "SECTOR 20 PART-B AND C II",
+			id: "sector-20-pocket-b-and-c-ii",
+			name: "SECTOR 20 POCKET-B AND C II",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-B AND C II.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-B AND C II in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-B AND C II in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-d",
-			name: "SECTOR 20 PART-D",
+			id: "sector-20-pocket-d",
+			name: "SECTOR 20 POCKET-D",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-D.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-e",
-			name: "SECTOR 20 PART-E",
+			id: "sector-20-pocket-e",
+			name: "SECTOR 20 POCKET-E",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-E.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-E in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-E in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-f",
-			name: "SECTOR 20 PART-F",
+			id: "sector-20-pocket-f",
+			name: "SECTOR 20 POCKET-F",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-F.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-F in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-F in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-g",
-			name: "SECTOR 20 PART-G",
+			id: "sector-20-pocket-g",
+			name: "SECTOR 20 POCKET-G",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-G.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-G in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-G in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-h",
-			name: "SECTOR 20 PART-H",
+			id: "sector-20-pocket-h",
+			name: "SECTOR 20 POCKET-H",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-H.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-H in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-H in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-k-and-l",
-			name: "SECTOR 20 PART-K AND L",
+			id: "sector-20-pocket-k-and-l",
+			name: "SECTOR 20 POCKET-K AND L",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-K AND L.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-K AND L in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-K AND L in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-m",
-			name: "SECTOR 20 PART-M",
+			id: "sector-20-pocket-m",
+			name: "SECTOR 20 POCKET-M",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-M.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-M in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-M in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-n",
-			name: "SECTOR 20 PART-N",
+			id: "sector-20-pocket-n",
+			name: "SECTOR 20 POCKET-N",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-N.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-N in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-N in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-o",
-			name: "SECTOR 20 PART-O",
+			id: "sector-20-pocket-o",
+			name: "SECTOR 20 POCKET-O",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-O.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-O in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-O in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-p",
-			name: "SECTOR 20 PART-P",
+			id: "sector-20-pocket-p",
+			name: "SECTOR 20 POCKET-P",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-P.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-P in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-P in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-q",
-			name: "SECTOR 20 PART-Q",
+			id: "sector-20-pocket-q",
+			name: "SECTOR 20 POCKET-Q",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-Q.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-Q in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-Q in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-r-and-s",
-			name: "SECTOR 20 PART-R AND S",
+			id: "sector-20-pocket-r-and-s",
+			name: "SECTOR 20 POCKET-R AND S",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-R AND S.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-R AND S in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-R AND S in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-t",
-			name: "SECTOR 20 PART-T",
+			id: "sector-20-pocket-t",
+			name: "SECTOR 20 POCKET-T",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-T.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-T in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-T in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
-			id: "sector-20-part-u",
-			name: "SECTOR 20 PART-U",
+			id: "sector-20-pocket-u",
+			name: "SECTOR 20 POCKET-U",
 			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-U.jpg",
 			description:
-				"Authority layout plan for SECTOR 20 PART-U in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
+				"Authority layout plan for SECTOR 20 POCKET-U in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-21-yamuna-expressway",
@@ -1266,7 +1266,7 @@ export const AREAS = {
  * Their Greater Noida page runs residential sectors first (ALPHA, BETA,
  * CHI-PHI, DELTA, ETA, GAMMA … ZETA), then industrial (ECOTECH, SURAJPUR,
  * TECH ZONE, TOY CITY), then institutional (KNOWLEDGE PARK). Their Yamuna page
- * is sector maps in numeric order — SECTOR-16, 17, 18 PART-1A…7F, 20 PART-A…U,
+ * is sector maps in numeric order — SECTOR-16, 17, 18 POCKET-1A…7F, 20 POCKET-A…U,
  * 21, 22D, 24, 29, 32, 33 — with villages kept separate.
  *
  * So: bucket by category, then sort naturally inside each bucket, with
@@ -1274,7 +1274,7 @@ export const AREAS = {
  */
 const CATEGORY: { rank: number; test: RegExp }[] = [
 	// Numbered sectors lead (this is what dominates the Yamuna listing).
-	{ rank: 0, test: /^(PART\s+)?SECTOR[\s-]*\d/i },
+	{ rank: 0, test: /^(POCKET\s+)?SECTOR[\s-]*\d/i },
 	// Institutional and industrial are called out before general residential
 	// only when the name says so; otherwise they fall through to residential.
 	{ rank: 2, test: /ECOTECH|UDYOG|TECH ZONE|TOY CITY|EPIP|INDUSTRIAL|SIKANDRABAD|SURAJPUR|SITE-V/i },
@@ -1283,7 +1283,7 @@ const CATEGORY: { rank: number; test: RegExp }[] = [
 	{ rank: 5, test: /^MASTER PLAN/i },
 ];
 
-const SECTOR_RE = /^(PART\s+)?SECTOR[\s-]*\d/i;
+const SECTOR_RE = /^(POCKET\s+)?SECTOR[\s-]*\d/i;
 
 /**
  * A sheet that says RESIDENTIAL on it is housing, whatever else is in the name.
@@ -1297,7 +1297,7 @@ const VILLAGE_RE = /ABADI|VILLAGE|VILL\.|^\d+\s*PERCENT/i;
 /** 0 = numbered sector, 1 = named residential sector, 2+ = see CATEGORY. */
 function categoryRank(name: string, sectorsLead: boolean): number {
 	// Abadi and village sheets are village sheets even when the name opens with
-	// a sector ("PART SECTOR-17 ABADI VILLAGE DHANAURI"). This has to beat the
+	// a sector ("POCKET SECTOR-17 ABADI VILLAGE DHANAURI"). This has to beat the
 	// sector test or they interleave with the sector plans, which is not how
 	// Shiva Associates list them — their sector pages carry no village sheets.
 	if (VILLAGE_RE.test(name)) return 4;
@@ -1311,7 +1311,7 @@ function categoryRank(name: string, sectorsLead: boolean): number {
  * A sheet covering two sectors ("SECTOR 18 AND 20", "SECTOR 24-A AND SECTOR
  * 22-E"). Shiva list these last within their first sector number, after the
  * single-sector parts. Anchored right after the sector number so the many
- * "PART-7A AND 7E" / "PART-K AND L" names do not match.
+ * "POCKET-7A AND 7E" / "POCKET-K AND L" names do not match.
  */
 const COMBINED_RE = /^SECTOR[\s-]*\d+\s*(-\s*[A-Z])?\s+AND\s+(SECTOR[\s-]*)?\d/i;
 
@@ -1433,7 +1433,7 @@ const NAME_PREFIX =
 /** Words that describe a parcel rather than name a sector. */
 const GENERIC = new Set([
 	"POCKET",
-	"PART",
+	"POCKET",
 	"ABADI",
 	"VILLAGE",
 	"SITE",

@@ -39,11 +39,13 @@ export const SITE = {
 	description:
 		"Property Solutions is one of the leading property dealers in Greater Noida, specialising in residential, commercial and industrial properties across Greater Noida and Noida Extension. Browse and download every authority layout plan, free.",
 	keywords: SHARED_KEYWORDS,
+	/** The line under the name in the contact band; client's own wording. */
+	tagline: "Property Dealers in Greater Noida | Greater Noida Property Dealer",
 	heroHeadline: "Property Solutions",
 	// The regions, as the client writes them.
 	heroRegions: "Greater Noida • Noida • YEIDA (Yamuna Expressway)",
 	heroTagline:
-		"From homes to industries, we help you find your perfect space.",
+		"From homes to industries, we help you find your perfect space solution.",
 	heroSubline:
 		"Residential, commercial and industrial plots across Greater Noida and Noida Extension — with every authority layout plan in one place.",
 	aboutLead:

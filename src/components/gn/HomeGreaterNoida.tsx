@@ -1,13 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+	BadgeIndianRupee,
 	Building2,
 	Factory,
+	FileCheck,
+	Handshake,
 	Home as HomeIcon,
 	LandPlot,
+	MapPinned,
 	Store,
 	TrendingUp,
 	Users,
+	Warehouse,
 } from "lucide-react";
 import Hero from "@/components/Hero";
 import ContactSection from "@/components/ContactSection";
@@ -56,18 +61,33 @@ const AUTHORITIES = [
 const WHY = [
 	{
 		icon: Users,
-		title: "2500+ Satisfied Clients",
-		body: `Since 2009 we have helped buyers and sellers across ${SITE.region} close on plots, factories and warehouses.`,
+		title: "2500+ Satisfied Clients Since 2009",
+		body: `Buyers, sellers and investors across ${SITE.region}, Noida Extension and the YEIDA sectors have closed plots, builder floors, warehouses and factory land through us — most of them repeat clients or referred by one.`,
 	},
 	{
 		icon: Building2,
-		title: "Every Authority Layout Plan",
-		body: `All ${ALL_MAPS.length} sector and village layout plans for ${SITE.region}, free to view and download at full resolution.`,
+		title: `All ${ALL_MAPS.length} Authority Layout Plans`,
+		body: `Every sector sheet, industrial pocket and village abadi plan we hold for ${SITE.region} is on this site, free to view and download at full resolution — no sign-up, and nothing covering the plot numbers.`,
 	},
 	{
 		icon: LandPlot,
-		title: "Clear Documentation",
-		body: "Straight answers on title, transfer and what a plot is actually worth — no surprises at registry.",
+		title: "Plot-Level Verification",
+		body: "Before you pay anything we put the plot against the authority layout plan — plot number, plot size, road width, park and facility reservations, and what the land next to it is reserved for.",
+	},
+	{
+		icon: FileCheck,
+		title: "Paperwork Handled End to End",
+		body: "Title check, transfer, mutation and the authority formalities walked through for you, so the file does not stall at the counter and there are no surprises at registry.",
+	},
+	{
+		icon: BadgeIndianRupee,
+		title: "Priced on What Actually Sold",
+		body: "We quote off recent transactions in the same sector, not the asking price. If a plot is overpriced, or the title is going to be a problem, you hear it before you commit.",
+	},
+	{
+		icon: MapPinned,
+		title: "Local and On the Ground",
+		body: `Our office is in the Alpha 1 Commercial Belt, ${SITE.region} — we can be standing on the plot with you the same day, layout plan in hand.`,
 	},
 ];
 
@@ -81,17 +101,32 @@ const EXPERTISE = [
 	{
 		icon: HomeIcon,
 		title: "Residential plots & houses",
-		body: `Authority plots, builder floors and ready houses across ${SITE.region} — matched to your budget and the sector you actually want to live in.`,
+		body: `Authority plots, builder floors and ready-to-move houses across ${SITE.region} — matched to your budget and to the sector you actually want to live in.`,
+	},
+	{
+		icon: Factory,
+		title: "Industrial land & factory plots",
+		body: "Ecotech and UPSIDA industrial plots, running factory units and land parcels, with the permitted use and power load checked up front.",
+	},
+	{
+		icon: Warehouse,
+		title: "Warehousing & godowns",
+		body: "Warehouse and godown space on the logistics belts — bought, sold or leased on clear written terms, with container access and road width verified.",
+	},
+	{
+		icon: Store,
+		title: "Commercial & retail",
+		body: "Shops, showrooms and retail frontage on the commercial belts, plus office space, with the transfer and sub-lease paperwork taken care of.",
 	},
 	{
 		icon: TrendingUp,
 		title: "Investment advisory",
-		body: "A straight read on which pockets are worth buying into and which are priced on a story, based on what has actually transacted nearby.",
+		body: "A straight read on which pockets are worth buying into and which are priced on a story — based on what has actually transacted nearby, not on a brochure.",
 	},
 	{
-		icon: Store,
-		title: "Commercial & industrial",
-		body: "Shops and retail frontage on the commercial belts, warehousing and factory plots in the industrial sectors, with transfer paperwork handled.",
+		icon: Handshake,
+		title: "Sale, purchase & leasing",
+		body: `We work both sides of the deal across ${SITE.region}, Noida and YEIDA: resale, fresh allotment, rental and long lease, from a single plot to a full factory site.`,
 	},
 ];
 
@@ -193,7 +228,7 @@ export default function HomeGreaterNoida() {
 					<h2 className="text-fluid-h2 text-center font-extrabold text-brand-950">
 						Our Layout Maps:
 					</h2>
-					<ul className="mt-9 grid gap-6 sm:grid-cols-3">
+					<ul className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 						{AREA_LIST.map((area) => (
 							<li key={area.slug} className="reveal">
 								<Link href={`/maps/${area.slug}`} className="group block">
@@ -239,7 +274,14 @@ export default function HomeGreaterNoida() {
 					<h2 className="text-fluid-h2 font-extrabold text-balance">
 						Why Choose Us As {SITE.title.split("|")[0].trim()}?
 					</h2>
-					<ul className="mt-9 grid gap-7 sm:grid-cols-3">
+					<p className="mt-3 max-w-5xl text-pretty text-white/70">
+						{SITE_NAME} has dealt in {SITE.region} property since 2009 —
+						residential plots, builder floors, commercial frontage, warehousing
+						and industrial land, on both sides of the transaction. We hold every
+						authority layout plan for the region, so the plot you are asked to
+						buy can be checked on paper before a rupee moves.
+					</p>
+					<ul className="mt-9 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
 						{WHY.map(({ icon: Icon, title, body }) => (
 							<li key={title} className="flex gap-4">
 								<span className="grid size-12 shrink-0 place-items-center rounded-xl border-2 border-brand-400/40 text-brand-300">
@@ -267,11 +309,15 @@ export default function HomeGreaterNoida() {
 				</h2>
 				<p className="mt-3 max-w-5xl text-pretty text-brand-900/70">
 					Expert guidance you can trust. We have worked these sectors since
-					2009, so we can tell you what a plot should cost, which authority
-					paperwork it needs and what the land beside it is reserved for —
-					before you commit, not after.
+					2009 — every Greek-letter sector, the Ecotech industrial pockets, the
+					village abadi belts and the Noida Extension and YEIDA sectors beside
+					them. So we can tell you what a plot should cost, which authority
+					paperwork it needs, how long the transfer will realistically take and
+					what the land beside it is reserved for — before you commit, not
+					after. One call, and you get a straight answer on availability, rate
+					and title.
 				</p>
-				<ul className="mt-9 grid gap-6 sm:grid-cols-3">
+				<ul className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
 					{EXPERTISE.map(({ icon: Icon, title, body }) => (
 						<li key={title} className="reveal card-surface p-6">
 							<span className="grid size-12 place-items-center rounded-xl bg-brand-50 text-brand-700">

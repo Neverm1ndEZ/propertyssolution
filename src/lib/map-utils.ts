@@ -48,6 +48,7 @@ const SKIP = new Set([
 	"GROUP",
 	"HOUSING",
 	"PART",
+	"POCKET",
 ]);
 
 const title = (s: string) =>
@@ -63,7 +64,7 @@ export function tagLabel(name: string): string {
 		.replace(/\s+/g, " ")
 		.trim();
 
-	const sector = n.match(/^(?:PART\s+)?SECTOR[\s-]*(\d+)/);
+	const sector = n.match(/^(?:(?:PART|POCKET)\s+)?SECTOR[\s-]*(\d+)/);
 	if (sector) return `Sector ${sector[1]}`;
 	if (/^\d+\s*PERCENT/.test(n)) return "7% residential plots";
 	if (/^MASTER PLAN/.test(n)) return "Master plan";

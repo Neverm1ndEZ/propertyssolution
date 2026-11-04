@@ -44,7 +44,7 @@ for (const area of AREA_LIST) {
 	// Sequence must match the competitor's: numbered sectors first in numeric
 	// order, then residential, industrial, institutional, villages, master plans.
 	const names = getMaps(area.slug).map((m) => m.name);
-	const SECTOR_RE = /^(PART\s+)?SECTOR[\s-]*\d/i;
+	const SECTOR_RE = /^((?:PART|POCKET)\s+)?SECTOR[\s-]*\d/i;
 	// Sectors only lead when they dominate the listing (Yamuna). On Greater
 	// Noida there are a handful and they sort alphabetically under "S".
 	const sectorsLead =

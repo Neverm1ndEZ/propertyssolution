@@ -62,7 +62,7 @@ export default function AllMapsPage() {
 				</nav>
 
 				<h1 className="text-fluid-h2 text-center font-extrabold text-balance text-brand-950">
-					Navigate with Ease — Explore Our Maps
+					Explore Beyond Boundaries - All Maps at your Fingertips
 				</h1>
 				<p className="mx-auto mt-3 max-w-4xl text-center text-brand-900/65">
 					All {ALL_MAPS.length} authority layout plans across{" "}
