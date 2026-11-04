@@ -3,21 +3,31 @@
 // SITE config is resolved at module load, so each site gets its own process.
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import path from "node:path";
 import { AREA_LIST, getMaps, mapData, relatedMaps } from "../src/lib/maps.ts";
 import { thumbUrl } from "../src/lib/map-utils.ts";
 import { SITE } from "../src/config/sites.ts";
+
+const dirCache = new Map();
+/** True only if the exact filename is present, case included. */
+function hasExactly(p) {
+	const dir = path.dirname(p);
+	if (!dirCache.has(dir))
+		dirCache.set(dir, new Set(fs.existsSync(dir) ? fs.readdirSync(dir) : []));
+	return dirCache.get(dir).has(path.basename(p));
+}
 
 let pages = 0;
 for (const area of AREA_LIST) {
 	for (const map of mapData[area.key]) {
 		pages++;
-		// Every referenced image and thumbnail must exist on disk.
+		// Every referenced image and thumbnail must exist on disk, with the same
+		// case. existsSync is case-insensitive on Windows, so it happily passed
+		// "...GREATER NOIDA.jpg" against a file named ".JPG" — and those 404ed on
+		// Vercel, whose filesystem is case-sensitive. Compare directory entries.
+		assert.ok(hasExactly("public" + map.imageUrl), `${map.id}: missing image ${map.imageUrl}`);
 		assert.ok(
-			fs.existsSync("public" + map.imageUrl),
-			`${map.id}: missing image ${map.imageUrl}`,
-		);
-		assert.ok(
-			fs.existsSync("public" + thumbUrl(map.imageUrl)),
+			hasExactly("public" + thumbUrl(map.imageUrl)),
 			`${map.id}: missing thumb for ${map.imageUrl}`,
 		);
 

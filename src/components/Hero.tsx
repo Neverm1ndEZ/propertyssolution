@@ -30,8 +30,11 @@ export default function Hero() {
 				<h1 className="text-fluid-hero font-extrabold text-balance">
 					{SITE.heroHeadline}
 				</h1>
-				<p className="mt-4 text-lg font-medium text-balance text-brand-200 sm:text-2xl">
-					Let&apos;s Turn Your Real Estate Dream Into Reality.
+				<p className="mt-3 text-lg font-semibold text-balance text-brand-200 sm:text-2xl">
+					{SITE.heroRegions}
+				</p>
+				<p className="mt-4 text-base text-balance text-white/80 sm:text-xl">
+					{SITE.heroTagline}
 				</p>
 
 				<HeroSearch areaSlug={AREA_LIST[0].slug} />
