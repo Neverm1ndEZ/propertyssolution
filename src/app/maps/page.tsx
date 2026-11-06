@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import { keywordsFor, pageKeywords } from "@/lib/seo";
-import ContactSection from "@/components/ContactSection";
+import PageTail from "@/components/PageTail";
 
 export const metadata: Metadata = {
 	title: "Our Maps — All Layout Plans",
@@ -151,7 +151,7 @@ export default function AllMapsPage() {
 				])}
 			/>
 
-			<ContactSection />
+			<PageTail />
 		</>
 	);
 }

@@ -7,7 +7,7 @@ import { LANDING_PAGES } from "@/config/landing";
 import { keywordsFor, pageKeywords } from "@/lib/seo";
 import MapCard from "@/components/MapCard";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
-import ContactSection from "@/components/ContactSection";
+import PageTail from "@/components/PageTail";
 
 /**
  * Keyword landing pages, flat at root (/land-in-greater-noida) to mirror the
@@ -134,7 +134,7 @@ export default async function LandingPage({
 				/>
 			</div>
 
-			<ContactSection />
+			<PageTail />
 		</>
 	);
 }

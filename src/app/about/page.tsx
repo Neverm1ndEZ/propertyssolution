@@ -19,7 +19,6 @@ import {
 	TrendingUp,
 	Warehouse,
 } from "lucide-react";
-import ContactSection from "@/components/ContactSection";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
 import { CLIENT_KEYWORDS, keywordsFor, pageKeywords } from "@/lib/seo";
@@ -27,12 +26,12 @@ import {
 	ADDRESS,
 	EMAIL,
 	HOURS,
-	OFFICE_MAP_EMBED,
 	PHONE,
 	PHONE_HREF,
 	SITE_NAME,
 } from "@/lib/site";
 import { SITE } from "@/config/sites";
+import PageTail from "@/components/PageTail";
 
 export const metadata: Metadata = {
 	title: `About us — ${SITE.region} Property Dealer Since 2009`,
@@ -584,7 +583,7 @@ export default function AboutPage() {
 					>
 						Visit the office
 					</h2>
-					<div className="mt-6 grid gap-7 lg:grid-cols-2">
+					<div className="mt-6">
 						<ul className="space-y-5 text-sm">
 							<li className="flex gap-4">
 								<MapPinned
@@ -634,15 +633,6 @@ export default function AboutPage() {
 								</span>
 							</li>
 						</ul>
-						<div className="card-surface overflow-hidden">
-							<iframe
-								src={OFFICE_MAP_EMBED}
-								title={`Map showing ${SITE_NAME} in Greater Noida`}
-								loading="lazy"
-								referrerPolicy="no-referrer-when-downgrade"
-								className="block h-[20rem] w-full border-0"
-							/>
-						</div>
 					</div>
 				</section>
 
@@ -697,7 +687,7 @@ export default function AboutPage() {
 			/>
 			<JsonLd data={faqJsonLd} />
 
-			<ContactSection />
+			<PageTail />
 		</>
 	);
 }

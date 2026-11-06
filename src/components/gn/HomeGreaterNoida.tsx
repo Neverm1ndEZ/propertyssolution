@@ -15,11 +15,9 @@ import {
 	Warehouse,
 } from "lucide-react";
 import Hero from "@/components/Hero";
-import ContactSection from "@/components/ContactSection";
-import GoogleReviews from "@/components/GoogleReviews";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
 import { thumbUrl } from "@/lib/map-utils";
-import { OFFICE_MAP_EMBED, SITE_NAME } from "@/lib/site";
+import { SITE_NAME } from "@/lib/site";
 import { SITE } from "@/config/sites";
 
 /**
@@ -332,29 +330,7 @@ export default function HomeGreaterNoida() {
 					))}
 				</ul>
 			</section>
-			{/* Visit Us */}
-			<section className="bg-sand-100 py-10 sm:py-12">
-				<div className="container-page">
-					<h2 className="text-fluid-h2 font-extrabold text-balance text-brand-950">
-						Visit us — we are right here in {SITE.region}
-					</h2>
-					{/* Map only. Address, phone and hours are in Get In Touch above and
-					    in the footer; a third copy here just read as two contact blocks.
-					    The map's own card carries the address anyway. */}
-					<div className="card-surface mt-7 overflow-hidden">
-						<iframe
-							src={OFFICE_MAP_EMBED}
-							title={`Map showing ${SITE_NAME} in ${SITE.region}`}
-							loading="lazy"
-							referrerPolicy="no-referrer-when-downgrade"
-							className="block h-80 w-full border-0 sm:h-[26rem]"
-						/>
-					</div>
-				</div>
-			</section>
-			<GoogleReviews />
 
-			<ContactSection />
 		</>
 	);
 }

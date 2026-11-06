@@ -10,7 +10,7 @@ import { SITE_NAME } from "@/lib/site";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import MapArticle from "@/components/MapArticle";
 import { keyPointsFor, keywordsFor, pageKeywords } from "@/lib/seo";
-import ContactSection from "@/components/ContactSection";
+import PageTail from "@/components/PageTail";
 
 export const dynamicParams = false;
 
@@ -251,7 +251,7 @@ export default async function MapDetailPage({
 				/>
 			</div>
 
-			<ContactSection />
+			<PageTail />
 		</>
 	);
 }

@@ -3,10 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ChevronRight } from "lucide-react";
 import MapGrid from "@/components/MapGrid";
-import ContactSection from "@/components/ContactSection";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import { AREA_LIST, getArea, getMaps } from "@/lib/maps";
 import { keywordsFor, pageKeywords } from "@/lib/seo";
+import PageTail from "@/components/PageTail";
 
 export const dynamicParams = false;
 
@@ -76,7 +76,7 @@ export default async function MapGridPage({
 			/>
 			</div>
 
-			<ContactSection />
+			<PageTail />
 		</>
 	);
 }
