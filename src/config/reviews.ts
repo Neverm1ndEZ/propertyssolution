@@ -1,24 +1,38 @@
 /**
- * Google Business Profile, as the client sent it (Nov 2026). The share link
- * resolves to "PROPERTY SOLUTIONS | GREATER NOIDA PROPERTY DEALER"
- * (Google knowledge graph id /g/11l6zg9bqr).
+ * Google Business Profile, as the client sent it (Nov 2026). Both share links
+ * he gave resolve to the same listing: "PROPERTY SOLUTIONS | GREATER NOIDA
+ * PROPERTY DEALER", knowledge graph id /g/11l6zg9bqr, maps CID
+ * 0x390cebe8b61e483f:0x83cdeee5138317b8.
  */
-export const GOOGLE_PROFILE_URL = "https://share.google/ExLDlbBJbND3calUF";
+export const GOOGLE_PROFILE_URL = "https://share.google/7vf5GE7EOO1pi5zjb";
 
 /**
- * Rating and review count are NOT fetched — reading them live needs the Google
- * Places API, a billing account and a key, which this build does not have. Set
- * them by hand from the profile and the band shows them; leave them null and
- * the band simply does not claim a score. Never guess these: a wrong rating on
- * the page is worse than no rating.
+ * What the Places API is asked to look up. Checked against Google Maps: this
+ * exact string resolves to the client's own listing and not to the tower.
+ */
+export const GOOGLE_PLACE_QUERY =
+	"PROPERTY SOLUTIONS | GREATER NOIDA PROPERTY DEALER, Tradex Tower-II, Alpha 1 Commercial Belt, Greater Noida";
+
+/**
+ * Map embed for the office. Querying the business name rather than the address
+ * makes the pin Google's card for the profile — name, rating and a link into
+ * the listing — which is the point of putting it on the page.
+ */
+export const GOOGLE_MAP_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(
+	GOOGLE_PLACE_QUERY,
+)}&output=embed`;
+
+/**
+ * Fallback rating and reviews, used only when the Places API is not configured
+ * or the call fails. Fill these from the profile by hand if you want something
+ * on the page without a key; leave them as they are and the band shows the
+ * heading and the Google buttons, never an invented score or quote.
  */
 export const GOOGLE_RATING: number | null = null;
 export const GOOGLE_REVIEW_COUNT: number | null = null;
-
-/**
- * Review quotes to show as cards. Copy them off the Google profile verbatim,
- * with the reviewer's name as it appears there. Empty is fine — the section
- * then shows the heading and the two Google buttons and nothing else, rather
- * than inventing testimonials.
- */
-export const TESTIMONIALS: { name: string; when: string; text: string }[] = [];
+export const TESTIMONIALS: {
+	name: string;
+	when: string;
+	rating: number;
+	text: string;
+}[] = [];

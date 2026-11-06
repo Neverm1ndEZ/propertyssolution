@@ -48,6 +48,18 @@ export const SITE = {
 		"From homes to industries, we help you find your perfect space solution.",
 	heroSubline:
 		"Residential, commercial and industrial plots across Greater Noida and Noida Extension — with every authority layout plan in one place.",
+	/**
+	 * The region-specific block on /about. Each domain argues its own belt here
+	 * so the two About pages are not the same page twice.
+	 */
+	aboutFocus: {
+		heading: "Property Dealers in Greater Noida",
+		paragraphs: [
+			"Greater Noida is where this firm started, and it is still the belt we know best. As a Greater Noida property dealer we work the Greek-letter sectors — Alpha, Beta, Gamma, Delta, Sigma, Omicron, Chi, Mu, Xu, Pi and the rest — along with the Ecotech industrial pockets, the institutional land around Knowledge Park and the village abadi belts that ring them.",
+			"Each of those behaves differently. An Alpha or Beta plot is a developed-sector resale with a straightforward GNIDA transfer. An Ecotech plot carries permitted use, power load and a construction timeline. A Kisan Abadi plot in Greater Noida is a village file that has to be read line by line. We price and paper all three, and we tell you which one actually fits what you are trying to do.",
+			"The authority publishes a layout plan for every one of these sectors, and those plans are what a purchase should start from. We hold them all, and they are on this site free — so whether you are looking for residential plots in Greater Noida, an industrial plot in Greater Noida or warehouse land in Greater Noida, you can check the plot number before you ever call us.",
+		],
+	},
 	aboutLead:
 		"Property Solutions has handled the sale and purchase of plots across Greater Noida since 2009 — residential, commercial and industrial, from a single plot to a full factory site.",
 	sibling: {

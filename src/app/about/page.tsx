@@ -354,8 +354,26 @@ export default function AboutPage() {
 			</section>
 
 			<div className="container-page py-10 sm:py-12">
+				{/* The belt this domain argues for — different copy on each site. */}
+				<section aria-labelledby="focus">
+					<h2
+						id="focus"
+						className="text-fluid-h2 font-extrabold text-brand-950"
+					>
+						{SITE.aboutFocus.heading}
+					</h2>
+					<div className="mt-4 max-w-5xl space-y-4 text-[0.95rem] leading-relaxed text-brand-900/75">
+						{SITE.aboutFocus.paragraphs.map((para) => (
+							<p key={para.slice(0, 40)}>{para}</p>
+						))}
+					</div>
+				</section>
+
 				{/* Mission & vision */}
-				<section aria-labelledby="mission" className="grid gap-5 sm:grid-cols-2">
+				<section
+					aria-labelledby="mission"
+					className="mt-12 grid gap-5 sm:grid-cols-2"
+				>
 					<div className="card-surface p-6">
 						<span className="grid size-10 place-items-center rounded-xl bg-brand-50 text-brand-700">
 							<Target aria-hidden className="size-5" />

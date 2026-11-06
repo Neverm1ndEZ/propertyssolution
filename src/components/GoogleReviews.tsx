@@ -5,17 +5,27 @@ import {
 	GOOGLE_REVIEW_COUNT,
 	TESTIMONIALS,
 } from "@/config/reviews";
+import { getGoogleReviews } from "@/lib/google-reviews";
+import JsonLd from "@/components/JsonLd";
 import { SITE_NAME } from "@/lib/site";
 
 /**
- * The Google reviews band the client asked for, pointing at his own Business
- * Profile. Deliberately not a live feed: pulling reviews needs the Places API
- * and a billing account, so the rating, the count and the quotes all come from
- * config/reviews.ts and the section degrades to just the two buttons when they
- * are empty. Nothing here claims a score the profile does not show.
+ * The Google reviews band, as on the competitor's home page: rating, review
+ * cards, and a way into the profile.
+ *
+ * Reviews come live from the Places API when GOOGLE_PLACES_API_KEY is set
+ * (see lib/google-reviews). Without a key it falls back to config/reviews.ts,
+ * and with neither it degrades to the heading and the two Google buttons —
+ * it never shows a rating or a quote that is not real.
  */
-export default function GoogleReviews() {
-	const hasScore = GOOGLE_RATING != null && GOOGLE_REVIEW_COUNT != null;
+export default async function GoogleReviews() {
+	const live = await getGoogleReviews();
+
+	const rating = live?.rating ?? GOOGLE_RATING;
+	const count = live?.count ?? GOOGLE_REVIEW_COUNT;
+	const profileUrl = live?.mapsUrl ?? GOOGLE_PROFILE_URL;
+	const cards = live?.reviews ?? TESTIMONIALS;
+	const hasScore = rating != null && count != null;
 
 	return (
 		<section
@@ -35,44 +45,37 @@ export default function GoogleReviews() {
 
 				{hasScore && (
 					<p className="mt-3 flex flex-wrap items-center justify-center gap-2 text-brand-900/70">
-						<span
-							aria-hidden
-							className="inline-flex items-center gap-0.5 text-brand-600"
-						>
-							{Array.from({ length: 5 }, (_, i) => (
-								<Star key={i} className="size-4 fill-current" />
-							))}
-						</span>
+						<Stars value={rating} className="size-4" />
 						<span>
 							Google rating{" "}
 							<strong className="font-bold text-brand-950">
-								{GOOGLE_RATING} of 5
+								{rating.toFixed(1)} of 5
 							</strong>
-							, based on {GOOGLE_REVIEW_COUNT} reviews
+							, based on {count} reviews
 						</span>
 					</p>
 				)}
 
-				{TESTIMONIALS.length > 0 && (
+				{cards.length > 0 && (
 					<ul className="mt-8 grid gap-5 text-left sm:grid-cols-2 lg:grid-cols-3">
-						{TESTIMONIALS.map((t) => (
-							<li key={`${t.name}-${t.when}`} className="card-surface p-5">
+						{cards.slice(0, 6).map((review) => (
+							<li
+								key={`${review.name}-${review.when}`}
+								className="card-surface flex flex-col p-5"
+							>
 								<div className="flex items-start justify-between gap-3">
-									<div>
-										<p className="font-bold text-brand-950">{t.name}</p>
-										<p className="text-xs text-brand-900/50">{t.when}</p>
+									<div className="min-w-0">
+										<p className="truncate font-bold text-brand-950">
+											{review.name}
+										</p>
+										{review.when && (
+											<p className="text-xs text-brand-900/50">{review.when}</p>
+										)}
 									</div>
-									<span
-										aria-hidden
-										className="inline-flex gap-0.5 text-brand-600"
-									>
-										{Array.from({ length: 5 }, (_, i) => (
-											<Star key={i} className="size-3.5 fill-current" />
-										))}
-									</span>
+									<Stars value={review.rating} className="size-3.5" />
 								</div>
-								<p className="mt-3 text-sm leading-relaxed text-brand-900/70">
-									{t.text}
+								<p className="mt-3 line-clamp-6 text-sm leading-relaxed text-brand-900/70">
+									{review.text}
 								</p>
 							</li>
 						))}
@@ -81,7 +84,7 @@ export default function GoogleReviews() {
 
 				<div className="mt-8 flex flex-wrap justify-center gap-3">
 					<a
-						href={GOOGLE_PROFILE_URL}
+						href={profileUrl}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="inline-flex items-center gap-2 rounded-full bg-brand-700 px-6 py-3 text-sm font-semibold text-white transition-[background-color,transform] hover:-translate-y-0.5 hover:bg-brand-800"
@@ -100,6 +103,39 @@ export default function GoogleReviews() {
 					</a>
 				</div>
 			</div>
+
+			{/* Only claimed when it came from Google itself. */}
+			{live && (
+				<JsonLd
+					data={{
+						"@context": "https://schema.org",
+						"@type": "RealEstateAgent",
+						name: SITE_NAME,
+						aggregateRating: {
+							"@type": "AggregateRating",
+							ratingValue: live.rating,
+							reviewCount: live.count,
+							bestRating: 5,
+						},
+					}}
+				/>
+			)}
 		</section>
+	);
+}
+
+/** Filled stars to the nearest half, with the number read out for assistive tech. */
+function Stars({ value, className }: { value: number; className: string }) {
+	return (
+		<span className="inline-flex shrink-0 items-center gap-0.5 text-brand-600">
+			<span className="sr-only">{value.toFixed(1)} out of 5</span>
+			{Array.from({ length: 5 }, (_, i) => (
+				<Star
+					key={i}
+					aria-hidden
+					className={`${className} ${i < Math.round(value) ? "fill-current" : "opacity-30"}`}
+				/>
+			))}
+		</span>
 	);
 }
