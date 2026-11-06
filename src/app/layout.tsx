@@ -8,6 +8,7 @@ import JsonLd from "@/components/JsonLd";
 import { ADDRESS, EMAIL, PHONE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { AREA_LIST } from "@/lib/maps";
 import { SITE } from "@/config/sites";
+import { GOOGLE_PROFILE_URL } from "@/config/reviews";
 import { keywordsFor, pageKeywords } from "@/lib/seo";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -67,6 +68,7 @@ const businessJsonLd = {
 	description: ADDRESS,
 	openingHours: "Mo-Su 09:30-20:30",
 	url: SITE_URL,
+	sameAs: [GOOGLE_PROFILE_URL],
 	areaServed: [SITE.region, "Greater Noida", "Yamuna Expressway", "Sikandrabad"],
 };
 

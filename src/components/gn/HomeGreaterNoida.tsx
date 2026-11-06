@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import Hero from "@/components/Hero";
 import ContactSection from "@/components/ContactSection";
+import GoogleReviews from "@/components/GoogleReviews";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
 import { thumbUrl } from "@/lib/map-utils";
 import { OFFICE_MAP_EMBED, SITE_NAME } from "@/lib/site";
@@ -351,6 +352,8 @@ export default function HomeGreaterNoida() {
 					</div>
 				</div>
 			</section>
+			<GoogleReviews />
+
 			<ContactSection />
 		</>
 	);
