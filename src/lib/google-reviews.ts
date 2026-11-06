@@ -1,4 +1,4 @@
-import { GOOGLE_PLACE_QUERY } from "@/config/reviews";
+import { GOOGLE_PLACE_ID, GOOGLE_PLACE_QUERY } from "@/config/reviews";
 
 /**
  * Live Google reviews, read from the Places API (New) on the server.
@@ -58,7 +58,7 @@ export async function getGoogleReviews(): Promise<LiveReviews | null> {
 	if (!key) return null;
 
 	try {
-		const placeId = process.env.GOOGLE_PLACE_ID;
+		const placeId = process.env.GOOGLE_PLACE_ID || GOOGLE_PLACE_ID;
 		let place: PlacesPlace | undefined;
 
 		if (placeId) {

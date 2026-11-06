@@ -7,7 +7,14 @@
 export const GOOGLE_PROFILE_URL = "https://share.google/7vf5GE7EOO1pi5zjb";
 
 /**
- * What the Places API is asked to look up. Checked against Google Maps: this
+ * The listing's Place ID, confirmed against the Places API on 2026-11-06:
+ * "PROPERTY SOLUTIONS | GREATER NOIDA PROPERTY DEALER", 4.8 from 113 ratings.
+ * Not a secret — only the API key is. Pinning it skips a Text Search call.
+ */
+export const GOOGLE_PLACE_ID = "ChIJP0getujrDDkRuBeDE-XuzYM";
+
+/**
+ * Fallback lookup if the place id is ever cleared. Checked against Google Maps: this
  * exact string resolves to the client's own listing and not to the tower.
  */
 export const GOOGLE_PLACE_QUERY =

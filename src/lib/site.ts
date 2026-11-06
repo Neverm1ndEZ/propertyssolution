@@ -6,7 +6,7 @@ export const PHONE_HREF = "tel:+919818055166";
 export const WHATSAPP_HREF = "https://wa.me/919818055166";
 export const EMAIL = "Propertysolutionsales.in@gmail.com";
 export const ADDRESS =
-	"Tradex Tower 2, Alpha 1 Commercial Belt, Greater Noida, Uttar Pradesh 201308";
+	"Tradex Tower 2, Alpha 1 Commercial Belt, Greater Noida, Uttar Pradesh 201306";
 export const HOURS = "Mon – Sun, 9:30 AM – 8:30 PM";
 
 /**

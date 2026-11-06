@@ -62,7 +62,7 @@ const businessJsonLd = {
 		streetAddress: "Tradex Tower 2, Alpha 1 Commercial Belt",
 		addressLocality: "Greater Noida",
 		addressRegion: "Uttar Pradesh",
-		postalCode: "201308",
+		postalCode: "201306",
 		addressCountry: "IN",
 	},
 	description: ADDRESS,
