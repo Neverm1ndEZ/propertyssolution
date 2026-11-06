@@ -100,9 +100,34 @@ function build(limit: number, ...groups: string[][]): string[] {
 const cross = (a: string[], b: string[], join = " in ") =>
 	a.flatMap((x) => b.map((y) => `${x}${join}${y}`));
 
+/**
+ * The exact phrases the client asked to see on the site (Nov 2026). They lead
+ * the keywords tag on every page and are also worked into the About copy, so
+ * they exist as real body text and not only as a meta tag Google ignores.
+ */
+export const CLIENT_KEYWORDS = [
+	"Greater Noida property dealer",
+	"Property dealer in Greater Noida",
+	"Property dealer of YEIDA Authority",
+	"YEIDA property dealer",
+	"Plot for sale in Greater Noida",
+	"Residential plots Greater Noida",
+	"Plot for sale in Yamuna Expressway",
+	"Yamuna Expressway plots",
+	"Industrial plot in Greater Noida",
+	"Industrial land for sale",
+	"Property dealer in Jewar",
+	"Jewar property dealer",
+	"Kisan Abadi plot Greater Noida",
+	"6% and 7% Abadi plots",
+	"Warehouse land Greater Noida",
+	"Warehousing land for sale",
+];
+
 /** The site-wide set every page carries. */
 export const BASE_KEYWORDS = build(
 	600,
+	CLIENT_KEYWORDS,
 	cross(ROLES, PLACES),
 	cross(ASSETS, PLACES),
 	cross(MAP_TERMS, PLACES),

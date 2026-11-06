@@ -4,6 +4,7 @@ import {
 	BadgeCheck,
 	Building2,
 	Clock,
+	Compass,
 	Factory,
 	FileCheck,
 	Handshake,
@@ -12,15 +13,16 @@ import {
 	Mail,
 	MapPinned,
 	Phone,
+	ScrollText,
 	ShieldCheck,
-	Store,
+	Target,
 	TrendingUp,
 	Warehouse,
 } from "lucide-react";
 import ContactSection from "@/components/ContactSection";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
-import { keywordsFor, pageKeywords } from "@/lib/seo";
+import { CLIENT_KEYWORDS, keywordsFor, pageKeywords } from "@/lib/seo";
 import {
 	ADDRESS,
 	EMAIL,
@@ -33,123 +35,198 @@ import {
 import { SITE } from "@/config/sites";
 
 export const metadata: Metadata = {
-	title: `About us — Property Dealer in ${SITE.region} Since 2009`,
-	description: `${SITE_NAME} has handled the sale, purchase and leasing of residential, commercial and industrial plots across ${SITE.region}, Noida and the Yamuna Expressway since 2009. Office in the Alpha 1 Commercial Belt, Greater Noida.`,
+	title: `About us — ${SITE.region} Property Dealer Since 2009`,
+	description: `${SITE_NAME} is a real estate consultancy established in 2009, dealing in residential plots, industrial plots, warehousing land, freehold land and 6% & 7% Kisan Abadi plots across Greater Noida, Noida, Jewar and the Yamuna Expressway (YEIDA).`,
 	keywords: pageKeywords([
+		...CLIENT_KEYWORDS,
 		...keywordsFor(`about ${SITE_NAME}`),
 		...keywordsFor(`property dealer in ${SITE.region}`),
 	]),
 	alternates: { canonical: "/about" },
 };
 
-/**
- * Office suite as the client's own trade listings carry it (Tradx/Tradex
- * Tower-II, shop 309–310). The street line itself stays in lib/site so the
- * footer, schema and this page cannot drift apart.
- */
+/** Office suite, as the client's own trade listings carry it. */
 const OFFICE = "Office 309–310, 3rd Floor, Tradex Tower-II, Block E";
 
 const STATS = [
 	{ value: "2009", label: "Dealing in this belt since" },
 	{ value: `${ALL_MAPS.length}`, label: "Authority layout plans published" },
 	{ value: "2500+", label: "Buyers and sellers served" },
-	{ value: "4", label: "Authorities we transact under" },
+	{ value: "3", label: "Authorities we transact under" },
 ];
 
+/**
+ * What we deal in — the client's own list (residential, industrial,
+ * warehousing, freehold, 6% & 7% Kisan Abadi), with the search phrases he
+ * asked to see on the site carried in the body copy rather than bolted on.
+ */
 const OFFERINGS = [
 	{
 		icon: Building2,
 		title: "Residential plots",
-		body: "Authority allotment and resale plots in every sector — corner, park-facing and the larger sizes on the wider roads.",
+		body: "Residential plots in Greater Noida and plots for sale in Greater Noida across every sector — authority allotment and resale, corner, park-facing and the larger sizes on the wider roads.",
+	},
+	{
+		icon: Factory,
+		title: "Industrial plots & land",
+		body: "Industrial plot in Greater Noida and industrial land for sale along the Yamuna Expressway — allotted parcels and running units, with permitted use and power load checked.",
+	},
+	{
+		icon: Warehouse,
+		title: "Warehousing land",
+		body: "Warehouse land in Greater Noida and warehousing land for sale on the logistics belts, with container access, road width and clear frontage verified on the authority plan.",
+	},
+	{
+		icon: LandPlot,
+		title: "Freehold land",
+		body: "Freehold parcels with clean ownership records, for buyers who want the land in their own name without an authority lease sitting over it.",
+	},
+	{
+		icon: ShieldCheck,
+		title: "6% & 7% Kisan Abadi plots",
+		body: "Kisan Abadi plot in Greater Noida — 6% and 7% Abadi plots in the villages, with the allotment file, lineage and conversion papers checked before any money moves.",
 	},
 	{
 		icon: Handshake,
 		title: "Commercial plots & shops",
-		body: "Retail frontage on the commercial belts, showrooms and office space, with clear title and the sub-lease paperwork handled.",
+		body: "Retail frontage on the commercial belts, shops, showrooms and office space, with clear title and the sub-lease paperwork handled.",
 	},
 	{
-		icon: ShieldCheck,
-		title: "6% & 7% Kisan Kota plots",
-		body: "Farmer-quota abadi plots in the villages, with the allotment file, lineage and conversion documents checked before you pay.",
-	},
-	{
-		icon: Factory,
-		title: "Industrial land & factory units",
-		body: "Ecotech and UPSIDA plots and running units, with permitted use, power load and completion status verified.",
-	},
-	{
-		icon: Warehouse,
-		title: "Warehousing & godowns",
-		body: "Logistics-belt warehousing bought, sold or leased — container access, road width and height checked on the plan first.",
-	},
-	{
-		icon: Store,
-		title: "Builder floors & ready houses",
-		body: "Ready-to-move floors and houses in the developed sectors, matched to budget and to the sector you actually want to live in.",
-	},
-	{
-		icon: LandPlot,
-		title: "Group housing & institutional land",
-		body: "Larger parcels for developers and institutions, with FAR, set-back and land use pulled off the authority master plan.",
+		icon: Compass,
+		title: "Jewar & Yamuna Expressway belt",
+		body: "Plot for sale in Yamuna Expressway, Yamuna Expressway plots and land around Jewar airport — as a property dealer in Jewar we track what is actually moving in that belt.",
 	},
 	{
 		icon: TrendingUp,
-		title: "Investment advisory",
-		body: "Which pockets are worth holding and which are priced on a story — read off what has actually transacted nearby.",
+		title: "Investment guidance",
+		body: "Reliable investment guidance for buyers, sellers, investors and businesses — which pockets are worth holding and which are priced on a story.",
 	},
 ];
 
-/** The authority a plot is allotted under decides its entire paperwork route. */
+/** The three authorities the client deals under, in his own words. */
 const AUTHORITIES = [
 	{
 		name: "GNIDA",
 		full: "Greater Noida Industrial Development Authority",
-		body: "Greek-letter sectors, Ecotech industrial pockets and the village abadi belts.",
-	},
-	{
-		name: "YEIDA",
-		full: "Yamuna Expressway Industrial Development Authority",
-		body: "Sectors 16 to 33 along the Jewar Airport belt, pocket by pocket.",
+		body: "Greek-letter sectors, Ecotech industrial pockets and the village abadi belts. As a Greater Noida property dealer this is the belt we have worked longest.",
 	},
 	{
 		name: "NOIDA",
 		full: "New Okhla Industrial Development Authority",
-		body: "Noida sectors and the Noida Extension / Greater Noida West grid.",
+		body: "Noida sectors and the Noida Extension / Greater Noida West grid, residential through industrial.",
 	},
 	{
-		name: "UPSIDA",
-		full: "UP State Industrial Development Authority",
-		body: "Industrial estates across the belt, including Sikandrabad.",
+		name: "YEIDA",
+		full: "Yamuna Expressway Industrial Development Authority",
+		body: "Sectors along the Jewar airport belt, pocket by pocket. We work as a property dealer of YEIDA Authority land — residential, industrial and warehousing.",
 	},
 ];
 
+/** The client's transaction-support list, step by step. */
 const PROCESS = [
 	{
-		title: "Tell us the brief",
-		body: "Size, budget, sector, and what the plot is for — a house to live in, a factory, a shop, or money parked for five years. All four need different advice.",
+		title: "Property selection",
+		body: "We start from what the plot is for — a house, a factory, a warehouse or money parked for five years — and shortlist only what fits the budget, the sector and the timeline.",
 	},
 	{
-		title: "Check it on the layout plan",
-		body: `We put the plot against the authority plan in front of you — plot number, plot size, road width, park and facility reservations, and what the land next to it is reserved for. All ${ALL_MAPS.length} plans are on this site, free.`,
+		title: "Title & ownership verification",
+		body: "Ownership records, chain of title and the allotment file are checked before anything is agreed. We focus on clear-title properties with proper documentation.",
 	},
 	{
-		title: "Walk the plot",
-		body: "Nothing replaces standing on the land. We go with you, plan in hand, and point out what the plan does not show: the drain, the HT line, the encroachment, the road that has not been cut yet.",
+		title: "Due diligence on the plan",
+		body: `We put the plot against the authority layout plan in front of you — plot number, size, road width, park and facility reservations, and what the land next to it is reserved for. All ${ALL_MAPS.length} plans are on this site, free.`,
 	},
 	{
-		title: "Price it on evidence",
-		body: "We quote off recent transactions in the same pocket, not the asking price. If a plot is overpriced, or the title is going to be a problem, you hear it before you commit.",
+		title: "Legal documentation coordination",
+		body: "Agreement, transfer memorandum, mutation and dues clearance coordinated with the authority and the legal side, so the file does not stall at the counter.",
 	},
 	{
-		title: "Paperwork to registry",
-		body: "Title search, allotment and transfer file, mutation, dues clearance and the authority formalities — walked through to registry so the file does not stall at the counter.",
+		title: "Transaction support to registry",
+		body: "We stay on the deal through payment, possession and registry, and remain reachable afterwards for the formalities that follow.",
+	},
+];
+
+const VALUES = [
+	{
+		icon: Handshake,
+		title: "Trust & transparency",
+		body: "Honest communication, transparent dealings and relationships built on trust rather than on a one-off commission.",
+	},
+	{
+		icon: ScrollText,
+		title: "Legal clarity",
+		body: "We prioritise clear-title properties and proper documentation so clients can make informed decisions.",
+	},
+	{
+		icon: BadgeCheck,
+		title: "Customer satisfaction",
+		body: "Our clients' requirements and interests sit at the centre of every transaction, start to finish.",
+	},
+	{
+		icon: Landmark,
+		title: "Professional expertise",
+		body: "Working these markets since 2009 means local knowledge and practical real estate expertise on every deal.",
+	},
+	{
+		icon: ShieldCheck,
+		title: "Integrity & commitment",
+		body: "Professional standards and ethical practice held to throughout the property transaction process.",
+	},
+	{
+		icon: Clock,
+		title: "Long-term relationships",
+		body: "Dependable service and ongoing support, because most of our business comes back to us or is referred.",
+	},
+];
+
+/** "Why clients trust us" — the client's eight points. */
+const TRUST = [
+	{
+		title: "Established experience since 2009",
+		body: "Over a decade in the Greater Noida, Noida and Yamuna Expressway real estate markets, through several cycles of this belt.",
+	},
+	{
+		title: "Extensive property options",
+		body: "Residential plots, industrial plots, warehousing, freehold land and 6% & 7% Kisan Abadi plots, all under one roof.",
+	},
+	{
+		title: "Expertise across major authorities",
+		body: "We deal in property under Greater Noida Authority, Noida Authority and YEIDA, and each one has its own transfer route.",
+	},
+	{
+		title: "Documentation assistance",
+		body: "Property documentation, ownership records, title verification coordination and the transaction formalities, handled with you.",
+	},
+	{
+		title: "Clear-title property focus",
+		body: "We prioritise properties with clear ownership and proper paperwork, and say so plainly when a file is not clean.",
+	},
+	{
+		title: "Local market knowledge",
+		body: "Greater Noida, Noida, Jewar and the Yamuna Expressway — we know which pockets are developing and which are still on paper.",
+	},
+	{
+		title: "Complete transaction support",
+		body: "From property selection through documentation to deal coordination, you have the same people throughout.",
+	},
+	{
+		title: "Reliable investment guidance",
+		body: "Buyers, sellers, investors and businesses helped to identify what actually suits their requirement and horizon.",
 	},
 ];
 
 const FAQ = [
 	{
-		q: `How long have you been dealing in ${SITE.region}?`,
-		a: `Since 2009. ${SITE_NAME} works out of the Alpha 1 Commercial Belt in Greater Noida, dealing in residential, commercial and industrial property across ${SITE.region}, Noida and the Yamuna Expressway.`,
+		q: `How long have you been a property dealer in ${SITE.region}?`,
+		a: `${SITE_NAME} was established in 2009 and works out of the Alpha 1 Commercial Belt, Greater Noida. We deal in residential, industrial and commercial property across Greater Noida, Noida, Jewar and the Yamuna Expressway (YEIDA) region.`,
+	},
+	{
+		q: "Which authorities do you deal under?",
+		a: "Greater Noida Industrial Development Authority (GNIDA), New Okhla Industrial Development Authority (NOIDA) and Yamuna Expressway Industrial Development Authority (YEIDA). The authority a plot sits under decides its transfer route, dues and registry timeline.",
+	},
+	{
+		q: "What is a 6% or 7% Kisan Abadi plot, and is it safe to buy?",
+		a: "It is abadi land returned to farmers against land the authority acquired. A Kisan Abadi plot in Greater Noida can be a sound buy at the right price, but the file — allotment, lineage, conversion, dues — decides that, and we check all of it before any money moves.",
 	},
 	{
 		q: "Do the layout plans on this site cost anything?",
@@ -157,15 +234,11 @@ const FAQ = [
 	},
 	{
 		q: "Can you check a plot someone else has shown me?",
-		a: "Yes, and it is the cheapest hour you will spend. Send the plot number and sector and we will pull the authority plan, tell you what the plot actually is, and what it is realistically worth.",
+		a: "Yes, and it is the cheapest hour you will spend. Send the plot number and sector and we will pull the authority plan, verify the ownership position and tell you what the plot is realistically worth.",
 	},
 	{
-		q: "What is a 6% or 7% Kisan Kota plot, and is it safe to buy?",
-		a: "It is abadi land returned to farmers against land the authority acquired. It can be a sound buy at the right price, but the file — allotment, lineage, conversion, dues — decides that. We check all of it before any money moves.",
-	},
-	{
-		q: "Do you handle rentals and leasing as well as sale and purchase?",
-		a: "Yes — shops, office space, warehousing and industrial units, let on clear written terms with both sides briefed properly.",
+		q: "Do you handle industrial land and warehousing as well as plots?",
+		a: "Yes — industrial land for sale, factory units and warehousing land for sale across the Greater Noida and Yamuna Expressway belts, for purchase and for lease.",
 	},
 	{
 		q: "How do I reach you?",
@@ -186,43 +259,62 @@ const faqJsonLd = {
 export default function AboutPage() {
 	return (
 		<>
-			{/* Intro */}
+			{/* Intro — the client's own About copy. */}
 			<div className="container-page py-8 lg:py-12">
 				<div className="max-w-5xl">
 					<p className="text-xs font-semibold tracking-widest text-brand-600 uppercase">
-						Since 2009 · Alpha 1 Commercial Belt, Greater Noida
+						About {SITE_NAME} · Since 2009
 					</p>
 					<h1 className="text-fluid-h2 mt-2 font-extrabold text-balance text-brand-950">
-						Property Dealer in {SITE.region} — Turning Real Estate Plans Into
-						Property You Own
+						Your Trusted Real Estate Partner Since 2009 — {SITE.region} Property
+						Dealer
 					</h1>
 
 					<div className="mt-6 space-y-5 text-[0.95rem] leading-relaxed text-brand-900/75">
-						<p>{SITE.aboutLead}</p>
 						<p>
-							We are a family-run dealership, not a call centre. The people who
-							answer the phone are the ones who walk the plot with you, pull the
-							authority file and sit through the registry. In this belt that
-							matters more than a brochure: two plots in the same sector can
-							have different sizes, different road frontage and completely
-							different paperwork, and none of that is visible from the road.
+							{SITE_NAME} is a trusted real estate consultancy firm established
+							in 2009, specialising in residential, industrial and commercial
+							land transactions across Greater Noida, Noida and the Yamuna
+							Expressway (YEIDA) region, including Jewar. As a Greater Noida
+							property dealer and a property dealer of YEIDA Authority land, we
+							work both sides of the transaction.
 						</p>
 						<p>
-							Buying land here starts with the authority layout plan, and those
-							plans have always been hard to get hold of. So we put every one we
-							have on this site — {ALL_MAPS.length} sector, industrial and
-							village abadi plans across{" "}
+							With over a decade of experience in the real estate industry, we
+							are committed to helping individuals, investors, businesses and
+							developers find the right property opportunities at the right
+							value.
+						</p>
+						<p>
+							We deal in a wide range of properties, including residential plots
+							in Greater Noida, industrial plots, warehousing land, freehold
+							land and 6% &amp; 7% Kisan Abadi plots across Greater Noida and
+							the Yamuna Expressway region — from a plot for sale in Greater
+							Noida to industrial land for sale and Yamuna Expressway plots near
+							Jewar.
+						</p>
+						<p>
+							At {SITE_NAME}, we believe that a successful property transaction
+							begins with trust, transparency and proper guidance. We assist our
+							clients throughout the entire property-buying and selling process,
+							including property selection, title and ownership document
+							verification, due diligence, legal documentation coordination and
+							transaction support. We focus on offering clear-title properties
+							with proper documentation, helping our clients make informed and
+							confident real estate decisions.
+						</p>
+						<p>
+							Whether you are looking to purchase a residential plot, invest in
+							industrial land, acquire warehousing space or explore investment
+							opportunities around Jewar and the Yamuna Expressway,{" "}
+							{SITE_NAME} is here to guide you at every step. Buying land here
+							starts with the authority layout plan, so we have put every one we
+							hold on this site — {ALL_MAPS.length} plans across{" "}
 							{AREA_LIST.map((a) => a.name).join(", ")} — free to view and
-							download at full resolution. Find your sector, check the plot
-							number, then call us about what is genuinely available and what it
-							should cost.
+							download at full resolution.
 						</p>
-						<p>
-							The way we work has not changed since 2009: clear documentation,
-							pricing based on what has actually transacted, and a straight
-							answer about what a plot is worth — including when that answer is
-							that you should walk away. Payment by cash, cheque, card or money
-							order. We are open {HOURS}.
+						<p className="text-base font-semibold text-brand-900">
+							{SITE_NAME} — Your Property, Our Responsibility.
 						</p>
 					</div>
 
@@ -247,7 +339,7 @@ export default function AboutPage() {
 			{/* Stats */}
 			<section
 				className="bg-brand-950 py-9 text-white"
-				aria-label="Property Solutions at a glance"
+				aria-label={`${SITE_NAME} at a glance`}
 			>
 				<ul className="container-page grid gap-7 sm:grid-cols-2 lg:grid-cols-4">
 					{STATS.map(({ value, label }) => (
@@ -262,8 +354,42 @@ export default function AboutPage() {
 			</section>
 
 			<div className="container-page py-10 sm:py-12">
+				{/* Mission & vision */}
+				<section aria-labelledby="mission" className="grid gap-5 sm:grid-cols-2">
+					<div className="card-surface p-6">
+						<span className="grid size-10 place-items-center rounded-xl bg-brand-50 text-brand-700">
+							<Target aria-hidden className="size-5" />
+						</span>
+						<h2
+							id="mission"
+							className="mt-4 text-lg font-bold text-brand-950 sm:text-xl"
+						>
+							Our mission
+						</h2>
+						<p className="mt-2 text-sm leading-relaxed text-brand-900/70">
+							To provide reliable, transparent and professional real estate
+							consultancy services, while helping our clients find the right
+							property opportunities and make secure investment decisions.
+						</p>
+					</div>
+					<div className="card-surface p-6">
+						<span className="grid size-10 place-items-center rounded-xl bg-brand-50 text-brand-700">
+							<Compass aria-hidden className="size-5" />
+						</span>
+						<h2 className="mt-4 text-lg font-bold text-brand-950 sm:text-xl">
+							Our vision
+						</h2>
+						<p className="mt-2 text-sm leading-relaxed text-brand-900/70">
+							To become one of the most trusted and recognised real estate
+							consultancy firms in Greater Noida, Noida and the Yamuna
+							Expressway region, through integrity, expertise and long-term
+							client relationships.
+						</p>
+					</div>
+				</section>
+
 				{/* What we deal in */}
-				<section aria-labelledby="deal-in">
+				<section className="mt-12" aria-labelledby="deal-in">
 					<h2
 						id="deal-in"
 						className="text-fluid-h2 font-extrabold text-brand-950"
@@ -271,8 +397,9 @@ export default function AboutPage() {
 						What we deal in
 					</h2>
 					<p className="mt-3 max-w-5xl text-pretty text-brand-900/70">
-						Everything the authorities allot in this belt, on both sides of the
-						transaction — sale, purchase and leasing.
+						Residential plots, industrial plots, warehousing land, freehold land
+						and 6% &amp; 7% Kisan Abadi plots across Greater Noida, Noida, Jewar
+						and the Yamuna Expressway — on both sides of the transaction.
 					</p>
 					<ul className="mt-6 grid gap-4 sm:grid-cols-2">
 						{OFFERINGS.map(({ icon: Icon, title, body }) => (
@@ -292,14 +419,48 @@ export default function AboutPage() {
 					</ul>
 				</section>
 
-				{/* How we work */}
-				<section className="mt-12" aria-labelledby="how-we-work">
+				{/* Authorities */}
+				<section className="mt-12" aria-labelledby="authorities">
 					<h2
-						id="how-we-work"
+						id="authorities"
 						className="text-fluid-h2 font-extrabold text-brand-950"
 					>
-						How a deal actually runs with us
+						Authorities we deal under
 					</h2>
+					<p className="mt-3 max-w-5xl text-pretty text-brand-900/70">
+						Our expertise covers properties under the three major development
+						authorities of this belt. Which one a plot sits under decides the
+						transfer route, the dues and how long registry takes.
+					</p>
+					<ul className="mt-6 grid gap-4 lg:grid-cols-3">
+						{AUTHORITIES.map(({ name, full, body }) => (
+							<li key={name} className="card-surface p-5">
+								<span className="grid size-10 place-items-center rounded-xl bg-brand-50 text-brand-700">
+									<Landmark aria-hidden className="size-5" />
+								</span>
+								<h3 className="mt-3 text-sm font-bold text-brand-950">
+									{name}
+								</h3>
+								<p className="text-xs text-brand-900/55">{full}</p>
+								<p className="mt-2 text-sm text-brand-900/65">{body}</p>
+							</li>
+						))}
+					</ul>
+				</section>
+
+				{/* How we help */}
+				<section className="mt-12" aria-labelledby="how-we-help">
+					<h2
+						id="how-we-help"
+						className="text-fluid-h2 font-extrabold text-brand-950"
+					>
+						How we support a transaction
+					</h2>
+					<p className="mt-3 max-w-5xl text-pretty text-brand-900/70">
+						We assist clients through the entire property buying and selling
+						process — selection, verification, due diligence, documentation and
+						deal coordination.
+					</p>
 					<ol className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
 						{PROCESS.map(({ title, body }, i) => (
 							<li key={title} className="card-surface p-5">
@@ -315,33 +476,55 @@ export default function AboutPage() {
 					</ol>
 				</section>
 
-				{/* Authorities */}
-				<section className="mt-12" aria-labelledby="authorities">
+				{/* Why clients trust us */}
+				<section className="mt-12" aria-labelledby="trust">
 					<h2
-						id="authorities"
+						id="trust"
 						className="text-fluid-h2 font-extrabold text-brand-950"
 					>
-						Authorities we transact under
+						Why clients trust us
 					</h2>
 					<p className="mt-3 max-w-5xl text-pretty text-brand-900/70">
-						The authority a plot is allotted under decides the transfer route,
-						the dues and how long registry takes. We deal across all four.
+						Choosing the right property dealer is one of the most important
+						steps in making a successful real estate investment. We combine
+						local market expertise, professional guidance and transparent
+						dealings to make that easier.
 					</p>
-					<ul className="mt-6 grid gap-4 sm:grid-cols-2">
-						{AUTHORITIES.map(({ name, full, body }) => (
-							<li key={name} className="card-surface flex gap-4 p-5">
-								<span className="grid size-10 shrink-0 place-items-center rounded-xl bg-brand-50 text-brand-700">
-									<Landmark aria-hidden className="size-5" />
+					<ol className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+						{TRUST.map(({ title, body }, i) => (
+							<li key={title} className="flex gap-3">
+								<span className="grid size-7 shrink-0 place-items-center rounded-full bg-brand-50 text-xs font-bold text-brand-700">
+									{i + 1}
 								</span>
-								<div className="min-w-0">
-									<h3 className="text-sm font-bold text-brand-950">
-										{name}{" "}
-										<span className="font-normal text-brand-900/55">
-											— {full}
-										</span>
-									</h3>
-									<p className="mt-1 text-sm text-brand-900/65">{body}</p>
+								<div>
+									<h3 className="text-sm font-bold text-brand-950">{title}</h3>
+									<p className="mt-1 text-sm leading-relaxed text-brand-900/65">
+										{body}
+									</p>
 								</div>
+							</li>
+						))}
+					</ol>
+				</section>
+
+				{/* Core values */}
+				<section className="mt-12" aria-labelledby="values">
+					<h2
+						id="values"
+						className="text-fluid-h2 font-extrabold text-brand-950"
+					>
+						Our core values
+					</h2>
+					<ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+						{VALUES.map(({ icon: Icon, title, body }) => (
+							<li key={title} className="card-surface p-5">
+								<span className="grid size-10 place-items-center rounded-xl bg-brand-50 text-brand-700">
+									<Icon aria-hidden className="size-5" />
+								</span>
+								<h3 className="mt-3 font-bold text-brand-950">{title}</h3>
+								<p className="mt-1.5 text-sm leading-relaxed text-brand-900/65">
+									{body}
+								</p>
 							</li>
 						))}
 					</ul>
@@ -360,8 +543,8 @@ export default function AboutPage() {
 							<li key={area.slug} className="card-surface p-5">
 								<h3 className="font-bold text-brand-950">{area.name}</h3>
 								<p className="mt-1.5 text-sm leading-relaxed text-brand-900/65">
-									{area.count} authority layout plans published, free to view and
-									download.
+									{area.count} authority layout plans published, free to view
+									and download.
 								</p>
 								<Link
 									href={`/maps/${area.slug}`}
@@ -428,8 +611,8 @@ export default function AboutPage() {
 									className="mt-0.5 size-5 shrink-0 text-brand-600"
 								/>
 								<span className="text-brand-900/75">
-									Walk in with a plot number and we will pull the layout plan for
-									it while you wait.
+									Walk in with a plot number and we will pull the layout plan
+									for it while you wait.
 								</span>
 							</li>
 						</ul>
@@ -443,6 +626,31 @@ export default function AboutPage() {
 							/>
 						</div>
 					</div>
+				</section>
+
+				{/* Closing */}
+				<section className="mt-12" aria-labelledby="closing">
+					<h2
+						id="closing"
+						className="text-fluid-h2 font-extrabold text-brand-950"
+					>
+						Your trusted property dealer in {SITE.region}
+					</h2>
+					<p className="mt-3 max-w-5xl text-pretty leading-relaxed text-brand-900/70">
+						Whether you are searching for a plot for sale in Greater Noida,
+						industrial land near the Yamuna Expressway, warehouse land in
+						Greater Noida or investment opportunities around Jewar,{" "}
+						{SITE_NAME} is committed to providing professional real estate
+						guidance. Call us on{" "}
+						<a
+							href={PHONE_HREF}
+							className="font-semibold text-brand-800 hover:text-brand-950"
+						>
+							{PHONE}
+						</a>{" "}
+						with a sector and a budget, and you will get a straight answer on
+						what is available and what it should cost.
+					</p>
 				</section>
 
 				{/* FAQ */}
