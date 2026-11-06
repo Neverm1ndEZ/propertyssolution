@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
@@ -97,6 +98,8 @@ export default function RootLayout({
 				<SiteFooter />
 				<FloatingActions />
 				<JsonLd data={businessJsonLd} />
+				{/* Vercel Web Analytics: page views only, no cookies, no consent banner. */}
+				<Analytics />
 			</body>
 		</html>
 	);
