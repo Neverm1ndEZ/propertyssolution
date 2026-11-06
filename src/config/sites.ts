@@ -37,7 +37,7 @@ export const SITE = {
 	region: "Greater Noida",
 	title: "Property Dealers in Greater Noida | Greater Noida Property Dealer",
 	description:
-		"Property Solutions is one of the leading property dealers in Greater Noida, specialising in residential, commercial and industrial properties across Greater Noida and Noida Extension. Browse and download every authority layout plan, free.",
+		"Property dealer in Greater Noida since 2009 — residential, commercial and industrial plots. Every authority layout plan, free to view and download.",
 	keywords: SHARED_KEYWORDS,
 	/** The line under the name in the contact band; client's own wording. */
 	tagline: "Property Dealers in Greater Noida | Greater Noida Property Dealer",

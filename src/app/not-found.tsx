@@ -1,10 +1,22 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Phone } from "lucide-react";
 import { AREA_LIST } from "@/lib/maps";
 import { PHONE, PHONE_HREF } from "@/lib/site";
 import PageTail from "@/components/PageTail";
 
-export const metadata = { title: "Page not found" };
+/**
+ * Without its own block this page inherited the root metadata: canonical
+ * pointing at the home page and the home description — i.e. a 404 telling
+ * Google it is the home page. Next already emits noindex here, so this only
+ * has to drop the canonical and give the page its own description.
+ */
+export const metadata: Metadata = {
+	title: "Page not found",
+	description:
+		"That page could not be found. Browse the authority layout plans or call us for help finding a plot.",
+	alternates: { canonical: null },
+};
 
 export default function NotFound() {
 	return (

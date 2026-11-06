@@ -23,7 +23,7 @@ export async function generateMetadata({
 	if (!area) return {};
 	return {
 		title: `${area.name} layout plans`,
-		description: `Browse and download all ${area.count} authority layout plans for ${area.name}.`,
+		description: `All ${area.count} authority layout plans for ${area.name}, free to view and download at full resolution — sector maps, industrial pockets and village abadi sheets, with plot numbers and road widths.`,
 		keywords: pageKeywords(keywordsFor(area.name, area.name)),
 		alternates: { canonical: `/maps/${area.slug}` },
 	};

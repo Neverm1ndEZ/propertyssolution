@@ -35,7 +35,7 @@ import PageTail from "@/components/PageTail";
 
 export const metadata: Metadata = {
 	title: `About us — ${SITE.region} Property Dealer Since 2009`,
-	description: `${SITE_NAME} is a real estate consultancy established in 2009, dealing in residential plots, industrial plots, warehousing land, freehold land and 6% & 7% Kisan Abadi plots across Greater Noida, Noida, Jewar and the Yamuna Expressway (YEIDA).`,
+	description: `${SITE_NAME}, a property dealer since 2009: residential and industrial plots, warehousing and 6% & 7% Kisan Abadi land across Greater Noida, Jewar and YEIDA.`,
 	keywords: pageKeywords([
 		...CLIENT_KEYWORDS,
 		...keywordsFor(`about ${SITE_NAME}`),
