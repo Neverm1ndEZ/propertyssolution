@@ -10,7 +10,6 @@ import { ADDRESS, EMAIL, PHONE, SITE_NAME, SITE_URL } from "@/lib/site";
 import { AREA_LIST } from "@/lib/maps";
 import { SITE } from "@/config/sites";
 import { GOOGLE_PROFILE_URL } from "@/config/reviews";
-import { keywordsFor, pageKeywords } from "@/lib/seo";
 
 const jakarta = Plus_Jakarta_Sans({
 	variable: "--font-plus-jakarta",
@@ -23,13 +22,12 @@ export const metadata: Metadata = {
 	// The home page had no canonical at all; every other route sets its own.
 	alternates: { canonical: "/" },
 	title: {
-		default: `${SITE.title} | ${SITE_NAME}`,
+		// No ` | ${SITE_NAME}` here: SITE.title is already a full ~60-char
+		// title tag, and the suffix pushed it past what Google shows.
+		default: SITE.title,
 		template: `%s | ${SITE_NAME}`,
 	},
 	description: SITE.description,
-	// The site-wide default: the region's own terms, the client's keyword set, then
-	// the 300 shared ones. A page with its own keywords replaces this entirely.
-	keywords: pageKeywords([...keywordsFor(SITE.region), ...SITE.keywords]),
 	openGraph: {
 		type: "website",
 		siteName: SITE_NAME,
@@ -67,6 +65,13 @@ const businessJsonLd = {
 		addressCountry: "IN",
 	},
 	description: ADDRESS,
+	// The pin on the client's own Google Business profile (Places API), not a
+	// geocode of the street line.
+	geo: {
+		"@type": "GeoCoordinates",
+		latitude: 28.4726122,
+		longitude: 77.5146872,
+	},
 	openingHours: "Mo-Su 09:30-20:30",
 	url: SITE_URL,
 	sameAs: [GOOGLE_PROFILE_URL],

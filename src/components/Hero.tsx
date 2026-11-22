@@ -17,7 +17,7 @@ export default function Hero() {
 			 */}
 			<Image
 				src="/site-assets/hero-1920.webp"
-				alt=""
+				alt="High-rise apartment towers behind a row of trees and open green space in Greater Noida"
 				fill
 				priority
 				fetchPriority="high"

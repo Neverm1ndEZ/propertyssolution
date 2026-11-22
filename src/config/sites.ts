@@ -10,38 +10,22 @@ import type { AreaKey } from "../lib/maps.ts";
  * flagged to the client, who chose this.
  */
 
-/**
- * Competitor keyword set (Shiva Associates' own meta keywords), rebranded.
- * Used on both sites per the client's instruction. Titles and H1s still differ
- * per region so the two domains do not compete head-on for the same query.
- */
-const SHARED_KEYWORDS = [
-	"Greater Noida Property Dealers",
-	"Best Property Dealer in Greater Noida",
-	"Yamuna Expressway Property Dealer",
-	"Property Dealers In Noida",
-	"Real Estate Agents In Noida",
-	"Property Dealers in Greater Noida West",
-	"Real Estate Agents in Greater Noida",
-	"Property Dealer in YEIDA",
-	"Greater Noida layout plan",
-	"Yamuna Expressway layout plan",
-	"Noida sector map",
-];
-
 export const SITE = {
 	key: "greater-noida",
 	domain: "propertyssolution.com",
 	// Greater Noida first; this domain targets Greater Noida queries.
 	areas: ["greaterNoida", "noidaExtension", "yamunaExpressway"] as AreaKey[],
 	region: "Greater Noida",
-	title: "Property Dealers in Greater Noida | Greater Noida Property Dealer",
+	// 60 chars and no repeated region: the old one was ~85 with "Greater
+	// Noida" twice, so Google cut it off mid-phrase.
+	title: "Property Dealer in Greater Noida | Plots, Land & Layout Maps",
 	description:
 		"Property dealer in Greater Noida since 2009 — residential, commercial and industrial plots. Every authority layout plan, free to view and download.",
-	keywords: SHARED_KEYWORDS,
 	/** The line under the name in the contact band; client's own wording. */
 	tagline: "Property Dealers in Greater Noida | Greater Noida Property Dealer",
-	heroHeadline: "Property Solutions",
+	// The page's h1. It was the brand name, which ranks for nothing — the
+	// brand stays in the header logo.
+	heroHeadline: "Property Dealers in Greater Noida — Plots, Land & Layout Maps",
 	// The regions, as the client writes them.
 	heroRegions: "Greater Noida • Noida • YEIDA (Yamuna Expressway)",
 	heroTagline:

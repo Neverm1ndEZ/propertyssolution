@@ -21,7 +21,6 @@ import {
 } from "lucide-react";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
-import { CLIENT_KEYWORDS, keywordsFor, pageKeywords } from "@/lib/seo";
 import {
 	ADDRESS,
 	EMAIL,
@@ -36,11 +35,6 @@ import PageTail from "@/components/PageTail";
 export const metadata: Metadata = {
 	title: `About us — ${SITE.region} Property Dealer Since 2009`,
 	description: `${SITE_NAME}, a property dealer since 2009: residential and industrial plots, warehousing and 6% & 7% Kisan Abadi land across Greater Noida, Jewar and YEIDA.`,
-	keywords: pageKeywords([
-		...CLIENT_KEYWORDS,
-		...keywordsFor(`about ${SITE_NAME}`),
-		...keywordsFor(`property dealer in ${SITE.region}`),
-	]),
 	alternates: { canonical: "/about" },
 };
 

@@ -9,7 +9,7 @@ import { localityFor, mapEmbedUrl } from "@/lib/locality";
 import { SITE_NAME } from "@/lib/site";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import MapArticle from "@/components/MapArticle";
-import { keyPointsFor, keywordsFor, pageKeywords } from "@/lib/seo";
+import { keyPointsFor } from "@/lib/seo";
 import PageTail from "@/components/PageTail";
 
 export const dynamicParams = false;
@@ -32,7 +32,6 @@ export async function generateMetadata({
 	return {
 		title: `${map.name}, ${area.name} HD Map`,
 		description: `Explore ${map.name}, ${area.name} Map. Presented by ${SITE_NAME}. View plot numbers, road widths and sector layout, and download the plan free.`,
-		keywords: pageKeywords(keywordsFor(map.name, area.name)),
 		alternates: { canonical: `/maps/${slug}/${mapId}` },
 		openGraph: {
 			type: "article",

@@ -5,735 +5,735 @@ export const mapData = {
 		{
 			id: "abadi-at-dabra",
 			name: "ABADI AT DABRA",
-			imageUrl: "/maps/greater-noida/ABADI AT DABRA.jpg",
+			imageUrl: "/maps/greater-noida/abadi-at-dabra.jpg",
 			description:
 				"ABADI AT DABRA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-at-junpat",
 			name: "ABADI AT JUNPAT",
-			imageUrl: "/maps/greater-noida/ABADI AT JUNPAT.jpg",
+			imageUrl: "/maps/greater-noida/abadi-at-junpat.jpg",
 			description:
 				"ABADI AT JUNPAT — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-at-kasna-pocket-a-b-c-d-e",
 			name: "ABADI AT KASNA POCKET A B C D E",
-			imageUrl: "/maps/greater-noida/ABADI AT KASNA POCKET A B C D E.jpg",
+			imageUrl: "/maps/greater-noida/abadi-at-kasna-pocket-a-b-c-d-e.jpg",
 			description:
 				"Authority layout plan for ABADI AT KASNA POCKET A B C D E in Greater Noida, showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "abadi-at-kherpur",
 			name: "ABADI AT KHERPUR",
-			imageUrl: "/maps/greater-noida/ABADI AT KHERPUR.jpg",
+			imageUrl: "/maps/greater-noida/abadi-at-kherpur.jpg",
 			description:
 				"ABADI AT KHERPUR — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-at-mycha",
 			name: "ABADI AT MYCHA",
-			imageUrl: "/maps/greater-noida/ABADI AT MYCHA.jpg",
+			imageUrl: "/maps/greater-noida/abadi-at-mycha.jpg",
 			description:
 				"ABADI AT MYCHA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-at-rithore",
 			name: "ABADI AT RITHORE",
-			imageUrl: "/maps/greater-noida/ABADI AT RITHORE.jpg",
+			imageUrl: "/maps/greater-noida/abadi-at-rithore.jpg",
 			description:
 				"ABADI AT RITHORE — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-at-sirsa",
 			name: "ABADI AT SIRSA",
-			imageUrl: "/maps/greater-noida/ABADI AT SIRSA.jpg",
+			imageUrl: "/maps/greater-noida/abadi-at-sirsa.jpg",
 			description:
 				"ABADI AT SIRSA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-at-village-saini",
 			name: "ABADI AT VILLAGE SAINI",
-			imageUrl: "/maps/greater-noida/ABADI AT VILLAGE SAINI.jpg",
+			imageUrl: "/maps/greater-noida/abadi-at-village-saini.jpg",
 			description:
 				"ABADI AT VILLAGE SAINI — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-expansion-aicher-village",
 			name: "ABADI EXPANSION AICHER VILLAGE",
-			imageUrl: "/maps/greater-noida/ABADI EXPANSION AICHER VILLAGE.jpg",
+			imageUrl: "/maps/greater-noida/abadi-expansion-aicher-village.jpg",
 			description:
 				"ABADI EXPANSION AICHER VILLAGE — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-expansion-chuhad-pur-and-gharbhara",
 			name: "ABADI EXPANSION CHUHAD PUR AND GHARBHARA",
-			imageUrl: "/maps/greater-noida/ABADI EXPANSION CHUHAD PUR AND GHARBHARA.jpg",
+			imageUrl: "/maps/greater-noida/abadi-expansion-chuhad-pur-and-gharbhara.jpg",
 			description:
 				"ABADI EXPANSION CHUHAD PUR AND GHARBHARA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-expansion-ithera-village",
 			name: "ABADI EXPANSION ITHERA VILLAGE",
-			imageUrl: "/maps/greater-noida/ABADI EXPANSION ITHERA VILLAGE.jpg",
+			imageUrl: "/maps/greater-noida/abadi-expansion-ithera-village.jpg",
 			description:
 				"ABADI EXPANSION ITHERA VILLAGE — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-expansion-namoli-rohilapur-gujarpur",
 			name: "ABADI EXPANSION NAMOLI ROHILAPUR GUJARPUR",
-			imageUrl: "/maps/greater-noida/ABADI EXPANSION NAMOLI ROHILAPUR GUJARPUR.jpg",
+			imageUrl: "/maps/greater-noida/abadi-expansion-namoli-rohilapur-gujarpur.jpg",
 			description:
 				"ABADI EXPANSION NAMOLI ROHILAPUR GUJARPUR — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-expansion-village-birondi",
 			name: "ABADI EXPANSION VILLAGE BIRONDI",
-			imageUrl: "/maps/greater-noida/ABADI EXPANSION VILLAGE BIRONDI.jpg",
+			imageUrl: "/maps/greater-noida/abadi-expansion-village-birondi.jpg",
 			description:
 				"ABADI EXPANSION VILLAGE BIRONDI — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-expansion-village-gharbhara",
 			name: "ABADI EXPANSION VILLAGE GHARBHARA",
-			imageUrl: "/maps/greater-noida/ABADI EXPANSION VILLAGE GHARBHARA.jpg",
+			imageUrl: "/maps/greater-noida/abadi-expansion-village-gharbhara.jpg",
 			description:
 				"ABADI EXPANSION VILLAGE GHARBHARA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-expansion-village-patwari",
 			name: "ABADI EXPANSION VILLAGE PATWARI",
-			imageUrl: "/maps/greater-noida/ABADI EXPANSION VILLAGE PATWARI.jpg",
+			imageUrl: "/maps/greater-noida/abadi-expansion-village-patwari.jpg",
 			description:
 				"ABADI EXPANSION VILLAGE PATWARI — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-extension-village-ghori-bachera",
 			name: "ABADI EXTENSION VILLAGE GHORI BACHERA",
-			imageUrl: "/maps/greater-noida/ABADI EXTENSION VILLAGE GHORI BACHERA.jpg",
+			imageUrl: "/maps/greater-noida/abadi-extension-village-ghori-bachera.jpg",
 			description:
 				"ABADI EXTENSION VILLAGE GHORI BACHERA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-extension-village-saini",
 			name: "ABADI EXTENSION VILLAGE SAINI",
-			imageUrl: "/maps/greater-noida/ABADI EXTENSION VILLAGE SAINI.jpg",
+			imageUrl: "/maps/greater-noida/abadi-extension-village-saini.jpg",
 			description:
 				"ABADI EXTENSION VILLAGE SAINI — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-village-pali",
 			name: "ABADI VILLAGE PALI",
-			imageUrl: "/maps/greater-noida/ABADI VILLAGE PALI.jpg",
+			imageUrl: "/maps/greater-noida/abadi-village-pali.jpg",
 			description:
 				"ABADI VILLAGE PALI — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "alpha-i",
 			name: "ALPHA-I",
-			imageUrl: "/maps/greater-noida/ALPHA-I.jpg",
+			imageUrl: "/maps/greater-noida/alpha-i.jpg",
 			description:
 				"ALPHA-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "alpha-ii",
 			name: "ALPHA-II",
-			imageUrl: "/maps/greater-noida/ALPHA-II.jpg",
+			imageUrl: "/maps/greater-noida/alpha-ii.jpg",
 			description:
 				"ALPHA-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "beta-i",
 			name: "BETA-I",
-			imageUrl: "/maps/greater-noida/BETA-I.jpg",
+			imageUrl: "/maps/greater-noida/beta-i.jpg",
 			description:
 				"BETA-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "beta-ii",
 			name: "BETA-II",
-			imageUrl: "/maps/greater-noida/BETA-II.jpg",
+			imageUrl: "/maps/greater-noida/beta-ii.jpg",
 			description:
 				"BETA-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "bzp-area",
 			name: "BZP AREA",
-			imageUrl: "/maps/greater-noida/BZP AREA.jpg",
+			imageUrl: "/maps/greater-noida/bzp-area.jpg",
 			description:
 				"BZP AREA — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "chi-phi-extension",
 			name: "CHI-PHI EXTENSION",
-			imageUrl: "/maps/greater-noida/CHI-PHI EXTENSION.jpg",
+			imageUrl: "/maps/greater-noida/chi-phi-extension.jpg",
 			description:
 				"CHI-PHI EXTENSION — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "delta-i",
 			name: "DELTA-I",
-			imageUrl: "/maps/greater-noida/DELTA-I.jpg",
+			imageUrl: "/maps/greater-noida/delta-i.jpg",
 			description:
 				"DELTA-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "delta-ii",
 			name: "DELTA-II",
-			imageUrl: "/maps/greater-noida/DELTA-II.jpg",
+			imageUrl: "/maps/greater-noida/delta-ii.jpg",
 			description:
 				"DELTA-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "delta-iii",
 			name: "DELTA-III",
-			imageUrl: "/maps/greater-noida/DELTA-III.jpg",
+			imageUrl: "/maps/greater-noida/delta-iii.jpg",
 			description:
 				"DELTA-III — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "ecotech-i",
 			name: "ECOTECH-I",
-			imageUrl: "/maps/greater-noida/ECOTECH-I.jpg",
+			imageUrl: "/maps/greater-noida/ecotech-i.jpg",
 			description:
 				"ECOTECH-I — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "ecotech-i-extension",
 			name: "ECOTECH-I EXTENSION",
-			imageUrl: "/maps/greater-noida/ECOTECH-I EXTENSION.jpg",
+			imageUrl: "/maps/greater-noida/ecotech-i-extension.jpg",
 			description:
 				"ECOTECH-I EXTENSION — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "ecotech-i-extension-i",
 			name: "ECOTECH-I EXTENSION-I",
-			imageUrl: "/maps/greater-noida/ECOTECH-I EXTENSION-I.jpg",
+			imageUrl: "/maps/greater-noida/ecotech-i-extension-i.jpg",
 			description:
 				"ECOTECH-I EXTENSION-I — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "ecotech-ii-udyog-vihar",
 			name: "ECOTECH-II UDYOG VIHAR",
-			imageUrl: "/maps/greater-noida/ECOTECH-II UDYOG VIHAR.jpg",
+			imageUrl: "/maps/greater-noida/ecotech-ii-udyog-vihar.jpg",
 			description:
 				"ECOTECH-II UDYOG VIHAR — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "ecotech-iii-udyog-kendra",
 			name: "ECOTECH-III UDYOG KENDRA",
-			imageUrl: "/maps/greater-noida/ECOTECH-III UDYOG KENDRA.jpg",
+			imageUrl: "/maps/greater-noida/ecotech-iii-udyog-kendra.jpg",
 			description:
 				"ECOTECH-III UDYOG KENDRA — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "ecotech-vi",
 			name: "ECOTECH-VI",
-			imageUrl: "/maps/greater-noida/ECOTECH-VI.jpg",
+			imageUrl: "/maps/greater-noida/ecotech-vi.jpg",
 			description:
 				"ECOTECH-VI — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "ecotech-xi",
 			name: "ECOTECH-XI",
-			imageUrl: "/maps/greater-noida/ECOTECH-XI.jpg",
+			imageUrl: "/maps/greater-noida/ecotech-xi.jpg",
 			description:
 				"ECOTECH-XI — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "ecotech-xii",
 			name: "ECOTECH-XII",
-			imageUrl: "/maps/greater-noida/ECOTECH-XII.jpg",
+			imageUrl: "/maps/greater-noida/ecotech-xii.jpg",
 			description:
 				"ECOTECH-XII — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "epip-export-zone",
 			name: "EPIP EXPORT ZONE",
-			imageUrl: "/maps/greater-noida/EPIP EXPORT ZONE.jpg",
+			imageUrl: "/maps/greater-noida/epip-export-zone.jpg",
 			description:
 				"EPIP EXPORT ZONE — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "eta-i",
 			name: "ETA-I",
-			imageUrl: "/maps/greater-noida/ETA-I.jpg",
+			imageUrl: "/maps/greater-noida/eta-i.jpg",
 			description:
 				"ETA-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "gamma-i",
 			name: "GAMMA-I",
-			imageUrl: "/maps/greater-noida/GAMMA-I.jpg",
+			imageUrl: "/maps/greater-noida/gamma-i.jpg",
 			description:
 				"GAMMA-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "gamma-ii",
 			name: "GAMMA-II",
-			imageUrl: "/maps/greater-noida/GAMMA-II.jpg",
+			imageUrl: "/maps/greater-noida/gamma-ii.jpg",
 			description:
 				"GAMMA-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "golf-link-i-p-8",
 			name: "GOLF LINK-I (P-8)",
-			imageUrl: "/maps/greater-noida/GOLF LINK-I (P-8).jpg",
+			imageUrl: "/maps/greater-noida/golf-link-i-p-8.jpg",
 			description:
 				"GOLF LINK-I (P-8) — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "golf-link-ii",
 			name: "GOLF LINK-II",
-			imageUrl: "/maps/greater-noida/GOLF LINK-II.jpg",
+			imageUrl: "/maps/greater-noida/golf-link-ii.jpg",
 			description:
 				"GOLF LINK-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "group-housing-sector-swarn-nagri",
 			name: "GROUP HOUSING SECTOR SWARN NAGRI",
-			imageUrl: "/maps/greater-noida/GROUP HOUSING SECTOR SWARN NAGRI.jpg",
+			imageUrl: "/maps/greater-noida/group-housing-sector-swarn-nagri.jpg",
 			description:
 				"GROUP HOUSING SECTOR SWARN NAGRI — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "industrial-area-sikandrabad",
 			name: "INDUSTRIAL AREA SIKANDRABAD",
-			imageUrl: "/maps/greater-noida/INDUSTRIAL AREA SIKANDRABAD.jpg",
+			imageUrl: "/maps/greater-noida/industrial-area-sikandrabad.jpg",
 			description:
 				"INDUSTRIAL AREA SIKANDRABAD — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "institutional-area-phase-2",
 			name: "INSTITUTIONAL AREA PHASE-2",
-			imageUrl: "/maps/greater-noida/INSTITUTIONAL AREA PHASE-2.jpg",
+			imageUrl: "/maps/greater-noida/institutional-area-phase-2.jpg",
 			description:
 				"INSTITUTIONAL AREA PHASE-2 — institutional sector layout plan in Greater Noida, covering plot allocations, road network and facility reservations. Free to view and download.",
 		},
 		{
 			id: "institutional-area-phase-iii-knowledge-park-iii",
 			name: "INSTITUTIONAL AREA PHASE-III KNOWLEDGE PARK-III",
-			imageUrl: "/maps/greater-noida/INSTITUTIONAL AREA PHASE-III KNOWLEDGE PARK-III.jpg",
+			imageUrl: "/maps/greater-noida/institutional-area-phase-iii-knowledge-park-iii.jpg",
 			description:
 				"INSTITUTIONAL AREA PHASE-III KNOWLEDGE PARK-III — institutional sector layout plan in Greater Noida, covering plot allocations, road network and facility reservations. Free to view and download.",
 		},
 		{
 			id: "jaitpur-vaishpur",
 			name: "JAITPUR VAISHPUR",
-			imageUrl: "/maps/greater-noida/JAITPUR VAISHPUR.jpg",
+			imageUrl: "/maps/greater-noida/jaitpur-vaishpur.jpg",
 			description:
 				"JAITPUR VAISHPUR — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "kasna-block-f",
 			name: "KASNA BLOCK-F",
-			imageUrl: "/maps/greater-noida/KASNA BLOCK-F.jpg",
+			imageUrl: "/maps/greater-noida/kasna-block-f.jpg",
 			description:
 				"KASNA BLOCK-F — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "khodna-khurd",
 			name: "KHODNA KHURD",
-			imageUrl: "/maps/greater-noida/KHODNA KHURD.jpg",
+			imageUrl: "/maps/greater-noida/khodna-khurd.jpg",
 			description:
 				"KHODNA KHURD — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "knowledge-park-iv",
 			name: "KNOWLEDGE PARK-IV",
-			imageUrl: "/maps/greater-noida/KNOWLEDGE PARK-IV.jpg",
+			imageUrl: "/maps/greater-noida/knowledge-park-iv.jpg",
 			description:
 				"KNOWLEDGE PARK-IV — institutional sector layout plan in Greater Noida, covering plot allocations, road network and facility reservations. Free to view and download.",
 		},
 		{
 			id: "knowledge-park-v",
 			name: "KNOWLEDGE PARK-V",
-			imageUrl: "/maps/greater-noida/KNOWLEDGE PARK-V.jpg",
+			imageUrl: "/maps/greater-noida/knowledge-park-v.jpg",
 			description:
 				"KNOWLEDGE PARK-V — institutional sector layout plan in Greater Noida, covering plot allocations, road network and facility reservations. Free to view and download.",
 		},
 		{
 			id: "masoori-gulawati-udyog-kendra",
 			name: "MASOORI GULAWATI UDYOG KENDRA",
-			imageUrl: "/maps/greater-noida/MASOORI GULAWATI UDYOG KENDRA.jpg",
+			imageUrl: "/maps/greater-noida/masoori-gulawati-udyog-kendra.jpg",
 			description:
 				"MASOORI GULAWATI UDYOG KENDRA — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "master-plan-of-greater-noida",
 			name: "MASTER PLAN OF GREATER NOIDA",
-			imageUrl: "/maps/greater-noida/MASTER PLAN OF GREATER NOIDA.jpg",
+			imageUrl: "/maps/greater-noida/master-plan-of-greater-noida.jpg",
 			description:
 				"MASTER PLAN OF GREATER NOIDA — the full authority master plan covering sector boundaries, land-use zoning, road network and planned development. Free to view and download.",
 		},
 		{
 			id: "mup-i",
 			name: "MUP-I",
-			imageUrl: "/maps/greater-noida/MUP-I.jpg",
+			imageUrl: "/maps/greater-noida/mup-i.jpg",
 			description:
 				"MUP-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "nri-city",
 			name: "NRI CITY",
-			imageUrl: "/maps/greater-noida/NRI CITY.jpg",
+			imageUrl: "/maps/greater-noida/nri-city.jpg",
 			description:
 				"NRI CITY — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "omicron-1-udyog-kendra",
 			name: "OMICRON-1 UDYOG KENDRA",
-			imageUrl: "/maps/greater-noida/OMICRON-1 UDYOG KENDRA.jpg",
+			imageUrl: "/maps/greater-noida/omicron-1-udyog-kendra.jpg",
 			description:
 				"OMICRON-1 UDYOG KENDRA — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "omicron-1a",
 			name: "OMICRON-1A",
-			imageUrl: "/maps/greater-noida/OMICRON-1A.jpg",
+			imageUrl: "/maps/greater-noida/omicron-1a.jpg",
 			description:
 				"OMICRON-1A — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "omicron-i",
 			name: "OMICRON-I",
-			imageUrl: "/maps/greater-noida/OMICRON-I.jpg",
+			imageUrl: "/maps/greater-noida/omicron-i.jpg",
 			description:
 				"OMICRON-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "omicron-ii",
 			name: "OMICRON-II",
-			imageUrl: "/maps/greater-noida/OMICRON-II.jpg",
+			imageUrl: "/maps/greater-noida/omicron-ii.jpg",
 			description:
 				"OMICRON-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "omicron-iii",
 			name: "OMICRON-III",
-			imageUrl: "/maps/greater-noida/OMICRON-III.jpg",
+			imageUrl: "/maps/greater-noida/omicron-iii.jpg",
 			description:
 				"OMICRON-III — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "omicron-iii-a-and-c-block",
 			name: "OMICRON-III A AND C BLOCK",
-			imageUrl: "/maps/greater-noida/OMICRON-III A AND C BLOCK.jpg",
+			imageUrl: "/maps/greater-noida/omicron-iii-a-and-c-block.jpg",
 			description:
 				"OMICRON-III A AND C BLOCK — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "pocket-p-3",
 			name: "POCKET P-3",
-			imageUrl: "/maps/greater-noida/POCKET P-3.jpg",
+			imageUrl: "/maps/greater-noida/pocket-p-3.jpg",
 			description:
 				"Authority layout plan for POCKET P-3 in Greater Noida, showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "pocket-p-4",
 			name: "POCKET P-4",
-			imageUrl: "/maps/greater-noida/POCKET P-4.jpg",
+			imageUrl: "/maps/greater-noida/pocket-p-4.jpg",
 			description:
 				"Authority layout plan for POCKET P-4 in Greater Noida, showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "raipur-banger",
 			name: "RAIPUR BANGER",
-			imageUrl: "/maps/greater-noida/RAIPUR BANGER.jpg",
+			imageUrl: "/maps/greater-noida/raipur-banger.jpg",
 			description:
 				"RAIPUR BANGER — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "rasulpur-rai-at-zeta-1",
 			name: "RASULPUR RAI AT ZETA-1",
-			imageUrl: "/maps/greater-noida/RASULPUR RAI AT ZETA-1.jpg",
+			imageUrl: "/maps/greater-noida/rasulpur-rai-at-zeta-1.jpg",
 			description:
 				"RASULPUR RAI AT ZETA-1 — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-mu-i",
 			name: "SECTOR MU-I",
-			imageUrl: "/maps/greater-noida/SECTOR MU-I.jpg",
+			imageUrl: "/maps/greater-noida/sector-mu-i.jpg",
 			description:
 				"SECTOR MU-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-mu-ii",
 			name: "SECTOR MU-II",
-			imageUrl: "/maps/greater-noida/SECTOR MU-II.jpg",
+			imageUrl: "/maps/greater-noida/sector-mu-ii.jpg",
 			description:
 				"SECTOR MU-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-p1-ekanki-enclave",
 			name: "SECTOR P1 EKANKI ENCLAVE",
-			imageUrl: "/maps/greater-noida/SECTOR P1 EKANKI ENCLAVE.jpg",
+			imageUrl: "/maps/greater-noida/sector-p1-ekanki-enclave.jpg",
 			description:
 				"SECTOR P1 EKANKI ENCLAVE — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-pi-1-and-pi-2",
 			name: "SECTOR PI-1 AND PI-2",
-			imageUrl: "/maps/greater-noida/SECTOR PI-1 AND PI-2.jpg",
+			imageUrl: "/maps/greater-noida/sector-pi-1-and-pi-2.jpg",
 			description:
 				"SECTOR PI-1 AND PI-2 — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-site-v-a-2",
 			name: "SECTOR SITE-V (A-2)",
-			imageUrl: "/maps/greater-noida/SECTOR SITE-V (A-2).jpg",
+			imageUrl: "/maps/greater-noida/sector-site-v-a-2.jpg",
 			description:
 				"SECTOR SITE-V (A-2) — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-xu-i",
 			name: "SECTOR XU-I",
-			imageUrl: "/maps/greater-noida/SECTOR XU-I.jpg",
+			imageUrl: "/maps/greater-noida/sector-xu-i.jpg",
 			description:
 				"SECTOR XU-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-xu-ii",
 			name: "SECTOR XU-II",
-			imageUrl: "/maps/greater-noida/SECTOR XU-II.jpg",
+			imageUrl: "/maps/greater-noida/sector-xu-ii.jpg",
 			description:
 				"SECTOR XU-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-xu-iii",
 			name: "SECTOR XU-III",
-			imageUrl: "/maps/greater-noida/SECTOR XU-III.jpg",
+			imageUrl: "/maps/greater-noida/sector-xu-iii.jpg",
 			description:
 				"SECTOR XU-III — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-1-greater-noida",
 			name: "SECTOR-1 GREATER NOIDA",
-			imageUrl: "/maps/greater-noida/SECTOR-1 GREATER NOIDA.jpg",
+			imageUrl: "/maps/greater-noida/sector-1-greater-noida.jpg",
 			description:
 				"SECTOR-1 GREATER NOIDA — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-2-greater-noida",
 			name: "SECTOR-2 GREATER NOIDA",
-			imageUrl: "/maps/greater-noida/SECTOR-2 GREATER NOIDA.jpg",
+			imageUrl: "/maps/greater-noida/sector-2-greater-noida.jpg",
 			description:
 				"SECTOR-2 GREATER NOIDA — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-3-greater-noida",
 			name: "SECTOR-3 GREATER NOIDA",
-			imageUrl: "/maps/greater-noida/SECTOR-3 GREATER NOIDA.jpg",
+			imageUrl: "/maps/greater-noida/sector-3-greater-noida.jpg",
 			description:
 				"SECTOR-3 GREATER NOIDA — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-16-greater-noida",
 			name: "SECTOR-16 GREATER NOIDA",
-			imageUrl: "/maps/greater-noida/SECTOR-16 GREATER NOIDA.jpg",
+			imageUrl: "/maps/greater-noida/sector-16-greater-noida.jpg",
 			description:
 				"SECTOR-16 GREATER NOIDA — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-31-swarn-nagari",
 			name: "SECTOR-31 SWARN NAGARI",
-			imageUrl: "/maps/greater-noida/SECTOR-31 SWARN NAGARI.jpg",
+			imageUrl: "/maps/greater-noida/sector-31-swarn-nagari.jpg",
 			description:
 				"SECTOR-31 SWARN NAGARI — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-36-greater-noida",
 			name: "SECTOR-36 GREATER NOIDA",
-			imageUrl: "/maps/greater-noida/SECTOR-36 GREATER NOIDA.jpg",
+			imageUrl: "/maps/greater-noida/sector-36-greater-noida.jpg",
 			description:
 				"SECTOR-36 GREATER NOIDA — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-37-greater-noida",
 			name: "SECTOR-37 GREATER NOIDA",
-			imageUrl: "/maps/greater-noida/SECTOR-37 GREATER NOIDA.jpg",
+			imageUrl: "/maps/greater-noida/sector-37-greater-noida.jpg",
 			description:
 				"SECTOR-37 GREATER NOIDA — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sigma-i-sector-42",
 			name: "SIGMA-I SECTOR-42",
-			imageUrl: "/maps/greater-noida/SIGMA-I SECTOR-42.jpg",
+			imageUrl: "/maps/greater-noida/sigma-i-sector-42.jpg",
 			description:
 				"SIGMA-I SECTOR-42 — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sigma-ii",
 			name: "SIGMA-II",
-			imageUrl: "/maps/greater-noida/SIGMA-II.jpg",
+			imageUrl: "/maps/greater-noida/sigma-ii.jpg",
 			description:
 				"SIGMA-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sigma-iii",
 			name: "SIGMA-III",
-			imageUrl: "/maps/greater-noida/SIGMA-III.jpg",
+			imageUrl: "/maps/greater-noida/sigma-iii.jpg",
 			description:
 				"SIGMA-III — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sigma-iv",
 			name: "SIGMA-IV",
-			imageUrl: "/maps/greater-noida/SIGMA-IV.jpg",
+			imageUrl: "/maps/greater-noida/sigma-iv.jpg",
 			description:
 				"SIGMA-IV — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "surajpur-site-b",
 			name: "SURAJPUR SITE-B",
-			imageUrl: "/maps/greater-noida/SURAJPUR SITE-B.jpg",
+			imageUrl: "/maps/greater-noida/surajpur-site-b.jpg",
 			description:
 				"SURAJPUR SITE-B — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "surajpur-site-c-industrial",
 			name: "SURAJPUR SITE-C INDUSTRIAL",
-			imageUrl: "/maps/greater-noida/SURAJPUR SITE-C INDUSTRIAL.jpg",
+			imageUrl: "/maps/greater-noida/surajpur-site-c-industrial.jpg",
 			description:
 				"SURAJPUR SITE-C INDUSTRIAL — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "surajpur-site-iv",
 			name: "SURAJPUR SITE-IV",
-			imageUrl: "/maps/greater-noida/SURAJPUR SITE-IV.jpg",
+			imageUrl: "/maps/greater-noida/surajpur-site-iv.jpg",
 			description:
 				"SURAJPUR SITE-IV — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "surajpur-site-v",
 			name: "SURAJPUR SITE-V",
-			imageUrl: "/maps/greater-noida/SURAJPUR SITE-V.jpg",
+			imageUrl: "/maps/greater-noida/surajpur-site-v.jpg",
 			description:
 				"SURAJPUR SITE-V — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "surajpur-site-v-a-3",
 			name: "SURAJPUR SITE-V (A-3)",
-			imageUrl: "/maps/greater-noida/SURAJPUR SITE-V (A-3).jpg",
+			imageUrl: "/maps/greater-noida/surajpur-site-v-a-3.jpg",
 			description:
 				"SURAJPUR SITE-V (A-3) — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "tech-zone-greater-noida",
 			name: "TECH ZONE GREATER NOIDA",
-			imageUrl: "/maps/greater-noida/TECH ZONE GREATER NOIDA.jpg",
+			imageUrl: "/maps/greater-noida/tech-zone-greater-noida.jpg",
 			description:
 				"TECH ZONE GREATER NOIDA — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "tech-zone-ii",
 			name: "TECH ZONE-II",
-			imageUrl: "/maps/greater-noida/TECH ZONE-II.jpg",
+			imageUrl: "/maps/greater-noida/tech-zone-ii.jpg",
 			description:
 				"TECH ZONE-II — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "tech-zone-iv",
 			name: "TECH ZONE-IV",
-			imageUrl: "/maps/greater-noida/TECH ZONE-IV.jpg",
+			imageUrl: "/maps/greater-noida/tech-zone-iv.jpg",
 			description:
 				"TECH ZONE-IV — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "toy-city",
 			name: "TOY CITY",
-			imageUrl: "/maps/greater-noida/TOY CITY.jpg",
+			imageUrl: "/maps/greater-noida/toy-city.jpg",
 			description:
 				"TOY CITY — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "toy-city-and-mup-ii",
 			name: "TOY CITY AND MUP-II",
-			imageUrl: "/maps/greater-noida/TOY CITY AND MUP-II.jpg",
+			imageUrl: "/maps/greater-noida/toy-city-and-mup-ii.jpg",
 			description:
 				"TOY CITY AND MUP-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "upsidc-surajpur-site-c-residential",
 			name: "UPSIDC SURAJPUR SITE-C RESIDENTIAL",
-			imageUrl: "/maps/greater-noida/UPSIDC SURAJPUR SITE-C RESIDENTIAL.jpg",
+			imageUrl: "/maps/greater-noida/upsidc-surajpur-site-c-residential.jpg",
 			description:
 				"UPSIDC SURAJPUR SITE-C RESIDENTIAL — industrial sector layout plan in Greater Noida, showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "village-ajyapur",
 			name: "VILLAGE AJYAPUR",
-			imageUrl: "/maps/greater-noida/VILLAGE AJYAPUR.jpg",
+			imageUrl: "/maps/greater-noida/village-ajyapur.jpg",
 			description:
 				"VILLAGE AJYAPUR — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-aminabad-and-jalpura",
 			name: "VILLAGE AMINABAD AND JALPURA",
-			imageUrl: "/maps/greater-noida/VILLAGE AMINABAD AND JALPURA.jpg",
+			imageUrl: "/maps/greater-noida/village-aminabad-and-jalpura.jpg",
 			description:
 				"VILLAGE AMINABAD AND JALPURA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-haibatpur",
 			name: "VILLAGE HAIBATPUR",
-			imageUrl: "/maps/greater-noida/VILLAGE HAIBATPUR.jpg",
+			imageUrl: "/maps/greater-noida/village-haibatpur.jpg",
 			description:
 				"VILLAGE HAIBATPUR — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-kasna",
 			name: "VILLAGE KASNA",
-			imageUrl: "/maps/greater-noida/VILLAGE KASNA.jpg",
+			imageUrl: "/maps/greater-noida/village-kasna.jpg",
 			description:
 				"VILLAGE KASNA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-khanpur",
 			name: "VILLAGE KHANPUR",
-			imageUrl: "/maps/greater-noida/VILLAGE KHANPUR.jpg",
+			imageUrl: "/maps/greater-noida/village-khanpur.jpg",
 			description:
 				"VILLAGE KHANPUR — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-luksar",
 			name: "VILLAGE LUKSAR",
-			imageUrl: "/maps/greater-noida/VILLAGE LUKSAR.jpg",
+			imageUrl: "/maps/greater-noida/village-luksar.jpg",
 			description:
 				"VILLAGE LUKSAR — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-malakpur",
 			name: "VILLAGE MALAKPUR",
-			imageUrl: "/maps/greater-noida/VILLAGE MALAKPUR.jpg",
+			imageUrl: "/maps/greater-noida/village-malakpur.jpg",
 			description:
 				"VILLAGE MALAKPUR — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-nato-ki-madhaya",
 			name: "VILLAGE NATO KI MADHAYA",
-			imageUrl: "/maps/greater-noida/VILLAGE NATO KI MADHAYA.jpg",
+			imageUrl: "/maps/greater-noida/village-nato-ki-madhaya.jpg",
 			description:
 				"VILLAGE NATO KI MADHAYA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-tugalpur-haldona",
 			name: "VILLAGE TUGALPUR HALDONA",
-			imageUrl: "/maps/greater-noida/VILLAGE TUGALPUR HALDONA.jpg",
+			imageUrl: "/maps/greater-noida/village-tugalpur-haldona.jpg",
 			description:
 				"VILLAGE TUGALPUR HALDONA — abadi and village layout plan in Greater Noida, showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "zeta-i",
 			name: "ZETA-I",
-			imageUrl: "/maps/greater-noida/ZETA-I.jpg",
+			imageUrl: "/maps/greater-noida/zeta-i.jpg",
 			description:
 				"ZETA-I — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "zeta-ii",
 			name: "ZETA-II",
-			imageUrl: "/maps/greater-noida/ZETA-II.jpg",
+			imageUrl: "/maps/greater-noida/zeta-ii.jpg",
 			description:
 				"ZETA-II — authority layout plan in Greater Noida, showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
@@ -742,497 +742,497 @@ export const mapData = {
 		{
 			id: "7-percent-residential-plots-munjkhera-and-villages",
 			name: "7 PERCENT RESIDENTIAL PLOTS MUNJKHERA AND VILLAGES",
-			imageUrl: "/maps/yamuna-expressway/7 PERCENT RESIDENTIAL PLOTS MUNJKHERA AND VILLAGES.jpg",
+			imageUrl: "/maps/yamuna-expressway/7-percent-residential-plots-munjkhera-and-villages.jpg",
 			description:
 				"7 PERCENT RESIDENTIAL PLOTS MUNJKHERA AND VILLAGES — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "7-percent-residential-plots-munjkhera-salarpur-atta-guzran",
 			name: "7 PERCENT RESIDENTIAL PLOTS MUNJKHERA SALARPUR ATTA GUZRAN",
-			imageUrl: "/maps/yamuna-expressway/7 PERCENT RESIDENTIAL PLOTS MUNJKHERA SALARPUR ATTA GUZRAN.jpg",
+			imageUrl: "/maps/yamuna-expressway/7-percent-residential-plots-munjkhera-salarpur-atta-guzran.jpg",
 			description:
 				"7 PERCENT RESIDENTIAL PLOTS MUNJKHERA SALARPUR ATTA GUZRAN — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "abadi-at-roza-yakubpur",
 			name: "ABADI AT ROZA YAKUBPUR",
-			imageUrl: "/maps/yamuna-expressway/ABADI AT ROZA YAKUBPUR.jpg",
+			imageUrl: "/maps/yamuna-expressway/abadi-at-roza-yakubpur.jpg",
 			description:
 				"ABADI AT ROZA YAKUBPUR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "abadi-village-rampur-faterpur",
 			name: "ABADI VILLAGE RAMPUR FATERPUR",
-			imageUrl: "/maps/yamuna-expressway/ABADI VILLAGE RAMPUR FATERPUR.jpg",
+			imageUrl: "/maps/yamuna-expressway/abadi-village-rampur-faterpur.jpg",
 			description:
 				"ABADI VILLAGE RAMPUR FATERPUR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "jaypee-sport-city",
 			name: "JAYPEE SPORT CITY",
-			imageUrl: "/maps/yamuna-expressway/JAYPEE SPORT CITY.jpg",
+			imageUrl: "/maps/yamuna-expressway/jaypee-sport-city.jpg",
 			description:
 				"JAYPEE SPORT CITY — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "master-plan-yamuna-expressway-2031-phase-1",
 			name: "MASTER PLAN YAMUNA EXPRESSWAY 2031 PHASE-1",
-			imageUrl: "/maps/yamuna-expressway/MASTER PLAN YAMUNA EXPRESSWAY 2031 PHASE-1.jpg",
+			imageUrl: "/maps/yamuna-expressway/master-plan-yamuna-expressway-2031-phase-1.jpg",
 			description:
 				"MASTER PLAN YAMUNA EXPRESSWAY 2031 PHASE-1 — the full authority master plan covering sector boundaries, land-use zoning, road network and planned development. Free to view and download.",
 		},
 		{
 			id: "master-plan-yamuna-expressway-2041-phase-1",
 			name: "MASTER PLAN YAMUNA EXPRESSWAY 2041 PHASE-1",
-			imageUrl: "/maps/yamuna-expressway/MASTER PLAN YAMUNA EXPRESSWAY 2041 PHASE-1.jpg",
+			imageUrl: "/maps/yamuna-expressway/master-plan-yamuna-expressway-2041-phase-1.jpg",
 			description:
 				"MASTER PLAN YAMUNA EXPRESSWAY 2041 PHASE-1 — the full authority master plan covering sector boundaries, land-use zoning, road network and planned development. Free to view and download.",
 		},
 		{
 			id: "pocket-sector-17-abadi-village-dhanauri",
 			name: "POCKET SECTOR-17 ABADI VILLAGE DHANAURI",
-			imageUrl: "/maps/yamuna-expressway/PART SECTOR-17 ABADI VILLAGE DHANAURI.jpg",
+			imageUrl: "/maps/yamuna-expressway/pocket-sector-17-abadi-village-dhanauri.jpg",
 			description:
 				"POCKET SECTOR-17 ABADI VILLAGE DHANAURI — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "pocket-sector-18-abadi-rampur-bangar-sadar",
 			name: "POCKET SECTOR-18 ABADI RAMPUR BANGAR SADAR",
-			imageUrl: "/maps/yamuna-expressway/PART SECTOR-18 ABADI RAMPUR BANGAR SADAR.jpg",
+			imageUrl: "/maps/yamuna-expressway/pocket-sector-18-abadi-rampur-bangar-sadar.jpg",
 			description:
 				"POCKET SECTOR-18 ABADI RAMPUR BANGAR SADAR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "pocket-sector-20-abadi-village-parsaul-block-w",
 			name: "POCKET SECTOR-20 ABADI VILLAGE PARSAUL BLOCK W",
-			imageUrl: "/maps/yamuna-expressway/PART SECTOR-20 ABADI VILLAGE PARSAUL BLOCK W.jpg",
+			imageUrl: "/maps/yamuna-expressway/pocket-sector-20-abadi-village-parsaul-block-w.jpg",
 			description:
 				"POCKET SECTOR-20 ABADI VILLAGE PARSAUL BLOCK W — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "ronija-block-a-and-niloni-shahpur-block-b",
 			name: "RONIJA BLOCK-A AND NILONI SHAHPUR BLOCK-B",
-			imageUrl: "/maps/yamuna-expressway/RONIJA BLOCK-A AND NILONI SHAHPUR BLOCK-B.jpg",
+			imageUrl: "/maps/yamuna-expressway/ronija-block-a-and-niloni-shahpur-block-b.jpg",
 			description:
 				"RONIJA BLOCK-A AND NILONI SHAHPUR BLOCK-B — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-17-yamuna-expressway",
 			name: "SECTOR 17 YAMUNA EXPRESSWAY",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 17 YAMUNA EXPRESSWAY.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-17-yamuna-expressway.jpg",
 			description:
 				"SECTOR 17 YAMUNA EXPRESSWAY — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-and-20",
 			name: "SECTOR 18 AND 20",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 AND 20.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-and-20.jpg",
 			description:
 				"SECTOR 18 AND 20 — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-1a",
 			name: "SECTOR 18 POCKET-1A",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-1A.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-1a.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-1A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-1b",
 			name: "SECTOR 18 POCKET-1B",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-1B.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-1b.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-1B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-2a-and-2c",
 			name: "SECTOR 18 POCKET-2A AND 2C",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-2A AND 2C.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-2a-and-2c.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-2A AND 2C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-2b",
 			name: "SECTOR 18 POCKET-2B",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-2B.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-2b.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-2B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-3a",
 			name: "SECTOR 18 POCKET-3A",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-3A.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-3a.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-3A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-3b",
 			name: "SECTOR 18 POCKET-3B",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-3B.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-3b.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-3B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-3c",
 			name: "SECTOR 18 POCKET-3C",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-3C.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-3c.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-3C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-3d",
 			name: "SECTOR 18 POCKET-3D",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-3D.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-3d.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-3D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-4a",
 			name: "SECTOR 18 POCKET-4A",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-4A.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-4a.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-4A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-5a",
 			name: "SECTOR 18 POCKET-5A",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-5A.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-5a.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-5A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-5b",
 			name: "SECTOR 18 POCKET-5B",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-5B.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-5b.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-5B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-5c",
 			name: "SECTOR 18 POCKET-5C",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-5C.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-5c.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-5C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-5d",
 			name: "SECTOR 18 POCKET-5D",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-5D.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-5d.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-5D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-6a",
 			name: "SECTOR 18 POCKET-6A",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-6A.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-6a.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-6A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-6b",
 			name: "SECTOR 18 POCKET-6B",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-6B.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-6b.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-6B in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-6c",
 			name: "SECTOR 18 POCKET-6C",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-6C.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-6c.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-6C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-6d",
 			name: "SECTOR 18 POCKET-6D",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-6D.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-6d.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-6D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-7a-and-7e",
 			name: "SECTOR 18 POCKET-7A AND 7E",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-7A AND 7E.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-7a-and-7e.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-7A AND 7E in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-7b-and-7f",
 			name: "SECTOR 18 POCKET-7B AND 7F",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-7B AND 7F.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-7b-and-7f.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-7B AND 7F in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-7c-and-7d",
 			name: "SECTOR 18 POCKET-7C AND 7D",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-7C AND 7D.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-7c-and-7d.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-7C AND 7D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-7e",
 			name: "SECTOR 18 POCKET-7E",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-7E.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-7e.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-7E in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-i",
 			name: "SECTOR 18 POCKET-I",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-I.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-i.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-I in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-j",
 			name: "SECTOR 18 POCKET-J",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 PART-J.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-j.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-J in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-7d",
 			name: "SECTOR 18 POCKET-7D",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 POCKET-7D.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-7d.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-7D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pocket-8",
 			name: "SECTOR 18 POCKET-8",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 18 POCKET-8.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pocket-8.jpg",
 			description:
 				"Authority layout plan for SECTOR 18 POCKET-8 in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-a",
 			name: "SECTOR 20 POCKET-A",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-A.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-a.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-A in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-b-and-c",
 			name: "SECTOR 20 POCKET-B AND C",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-B AND C.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-b-and-c.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-B AND C in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-b-and-c-ii",
 			name: "SECTOR 20 POCKET-B AND C II",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-B AND C II.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-b-and-c-ii.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-B AND C II in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-d",
 			name: "SECTOR 20 POCKET-D",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-D.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-d.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-D in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-e",
 			name: "SECTOR 20 POCKET-E",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-E.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-e.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-E in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-f",
 			name: "SECTOR 20 POCKET-F",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-F.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-f.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-F in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-g",
 			name: "SECTOR 20 POCKET-G",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-G.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-g.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-G in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-h",
 			name: "SECTOR 20 POCKET-H",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-H.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-h.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-H in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-k-and-l",
 			name: "SECTOR 20 POCKET-K AND L",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-K AND L.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-k-and-l.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-K AND L in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-m",
 			name: "SECTOR 20 POCKET-M",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-M.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-m.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-M in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-n",
 			name: "SECTOR 20 POCKET-N",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-N.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-n.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-N in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-o",
 			name: "SECTOR 20 POCKET-O",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-O.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-o.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-O in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-p",
 			name: "SECTOR 20 POCKET-P",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-P.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-p.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-P in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-q",
 			name: "SECTOR 20 POCKET-Q",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-Q.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-q.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-Q in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-r-and-s",
 			name: "SECTOR 20 POCKET-R AND S",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-R AND S.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-r-and-s.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-R AND S in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-t",
 			name: "SECTOR 20 POCKET-T",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-T.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-t.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-T in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-20-pocket-u",
 			name: "SECTOR 20 POCKET-U",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 20 PART-U.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-20-pocket-u.jpg",
 			description:
 				"Authority layout plan for SECTOR 20 POCKET-U in the Yamuna Expressway (YEIDA), showing plot numbers, pocket divisions, road widths, park and facility reservations. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-21-yamuna-expressway",
 			name: "SECTOR 21 YAMUNA EXPRESSWAY",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 21 YAMUNA EXPRESSWAY.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-21-yamuna-expressway.jpg",
 			description:
 				"SECTOR 21 YAMUNA EXPRESSWAY — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-24-a-and-sector-22-e",
 			name: "SECTOR 24-A AND SECTOR 22-E",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 24-A AND SECTOR 22-E.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-24-a-and-sector-22-e.jpg",
 			description:
 				"SECTOR 24-A AND SECTOR 22-E — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-29-industrial",
 			name: "SECTOR 29 INDUSTRIAL",
-			imageUrl: "/maps/yamuna-expressway/SECTOR 29 INDUSTRIAL.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-29-industrial.jpg",
 			description:
 				"SECTOR 29 INDUSTRIAL — industrial sector layout plan in the Yamuna Expressway (YEIDA), showing plot sizes, plot numbers, road widths and zoning for factory and warehouse land. Free to view and download.",
 		},
 		{
 			id: "sector-16-yamuna-expressway",
 			name: "SECTOR-16 YAMUNA EXPRESSWAY",
-			imageUrl: "/maps/yamuna-expressway/SECTOR-16 YAMUNA EXPRESSWAY.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-16-yamuna-expressway.jpg",
 			description:
 				"SECTOR-16 YAMUNA EXPRESSWAY — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-18-pkt-9-village-mirjapur",
 			name: "SECTOR-18 PKT-9 VILLAGE MIRJAPUR",
-			imageUrl: "/maps/yamuna-expressway/SECTOR-18 PKT-9 VILLAGE MIRJAPUR.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-18-pkt-9-village-mirjapur.jpg",
 			description:
 				"SECTOR-18 PKT-9 VILLAGE MIRJAPUR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "sector-22d",
 			name: "SECTOR-22D",
-			imageUrl: "/maps/yamuna-expressway/SECTOR-22D.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-22d.jpg",
 			description:
 				"SECTOR-22D — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-24-yamuna-expressway",
 			name: "SECTOR-24 YAMUNA EXPRESSWAY",
-			imageUrl: "/maps/yamuna-expressway/SECTOR-24 YAMUNA EXPRESSWAY.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-24-yamuna-expressway.jpg",
 			description:
 				"SECTOR-24 YAMUNA EXPRESSWAY — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-32-yamuna-expressway",
 			name: "SECTOR-32 YAMUNA EXPRESSWAY",
-			imageUrl: "/maps/yamuna-expressway/SECTOR-32 YAMUNA EXPRESSWAY.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-32-yamuna-expressway.jpg",
 			description:
 				"SECTOR-32 YAMUNA EXPRESSWAY — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "sector-33-yamuna-expressway",
 			name: "SECTOR-33 YAMUNA EXPRESSWAY",
-			imageUrl: "/maps/yamuna-expressway/SECTOR-33 YAMUNA EXPRESSWAY.jpg",
+			imageUrl: "/maps/yamuna-expressway/sector-33-yamuna-expressway.jpg",
 			description:
 				"SECTOR-33 YAMUNA EXPRESSWAY — authority layout plan in the Yamuna Expressway (YEIDA), showing plot numbers, plot sizes, road widths, parks and facility areas. Free to view and download at full resolution.",
 		},
 		{
 			id: "village-acheja-bujarg",
 			name: "VILLAGE ACHEJA BUJARG",
-			imageUrl: "/maps/yamuna-expressway/VILLAGE ACHEJA BUJARG.jpg",
+			imageUrl: "/maps/yamuna-expressway/village-acheja-bujarg.jpg",
 			description:
 				"VILLAGE ACHEJA BUJARG — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-dungarpur-reelka",
 			name: "VILLAGE DUNGARPUR REELKA",
-			imageUrl: "/maps/yamuna-expressway/VILLAGE DUNGARPUR REELKA.jpg",
+			imageUrl: "/maps/yamuna-expressway/village-dungarpur-reelka.jpg",
 			description:
 				"VILLAGE DUNGARPUR REELKA — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-kherali-bhav",
 			name: "VILLAGE KHERALI BHAV",
-			imageUrl: "/maps/yamuna-expressway/VILLAGE KHERALI BHAV.jpg",
+			imageUrl: "/maps/yamuna-expressway/village-kherali-bhav.jpg",
 			description:
 				"VILLAGE KHERALI BHAV — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-mohammadpur-gurjar",
 			name: "VILLAGE MOHAMMADPUR GURJAR",
-			imageUrl: "/maps/yamuna-expressway/VILLAGE MOHAMMADPUR GURJAR.jpg",
+			imageUrl: "/maps/yamuna-expressway/village-mohammadpur-gurjar.jpg",
 			description:
 				"VILLAGE MOHAMMADPUR GURJAR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-mubarakpur",
 			name: "VILLAGE MUBARAKPUR",
-			imageUrl: "/maps/yamuna-expressway/VILLAGE MUBARAKPUR.jpg",
+			imageUrl: "/maps/yamuna-expressway/village-mubarakpur.jpg",
 			description:
 				"VILLAGE MUBARAKPUR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-niloni-shahpur",
 			name: "VILLAGE NILONI SHAHPUR",
-			imageUrl: "/maps/yamuna-expressway/VILLAGE NILONI SHAHPUR.jpg",
+			imageUrl: "/maps/yamuna-expressway/village-niloni-shahpur.jpg",
 			description:
 				"VILLAGE NILONI SHAHPUR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
 		{
 			id: "village-rampur-sadar",
 			name: "VILLAGE RAMPUR SADAR",
-			imageUrl: "/maps/yamuna-expressway/VILLAGE RAMPUR SADAR.jpg",
+			imageUrl: "/maps/yamuna-expressway/village-rampur-sadar.jpg",
 			description:
 				"VILLAGE RAMPUR SADAR — abadi and village layout plan in the Yamuna Expressway (YEIDA), showing settlement boundaries, 7% and 6% abadi plots, road widths and reserved areas. Free to view and download.",
 		},
@@ -1241,7 +1241,7 @@ export const mapData = {
 		{
 			id: "master-plan-of-noida-extension",
 			name: "MASTER PLAN OF NOIDA EXTENSION",
-			imageUrl: "/maps/noida-extension/MASTER PLAN OF NOIDA EXTENSION.jpg",
+			imageUrl: "/maps/noida-extension/master-plan-of-noida-extension.jpg",
 			description:
 				"MASTER PLAN OF NOIDA EXTENSION — the full authority master plan covering sector boundaries, land-use zoning, road network and planned development. Free to view and download.",
 		},

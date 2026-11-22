@@ -16,7 +16,6 @@ import {
 } from "lucide-react";
 import Hero from "@/components/Hero";
 import { ALL_MAPS, AREA_LIST } from "@/lib/maps";
-import { thumbUrl } from "@/lib/map-utils";
 import { SITE_NAME } from "@/lib/site";
 import { SITE } from "@/config/sites";
 
@@ -26,11 +25,13 @@ import { SITE } from "@/config/sites";
  * then "Why Choose Us". The Yamuna site uses a different shape entirely.
  */
 
+// Each tile links to its landing page — they were plain text, so the service
+// pages had no link from the body of the home page, only from the footer.
 const DEALS_IN = [
-	{ icon: HomeIcon, label: "House" },
-	{ icon: LandPlot, label: "Land" },
-	{ icon: Factory, label: "Industrial" },
-	{ icon: Store, label: "Commercial" },
+	{ icon: HomeIcon, label: "House", href: "/residential-plots-in-greater-noida" },
+	{ icon: LandPlot, label: "Land", href: "/land-in-greater-noida" },
+	{ icon: Factory, label: "Industrial", href: "/industrial-land-in-greater-noida" },
+	{ icon: Store, label: "Commercial", href: "/commercial-property-in-greater-noida" },
 ];
 
 // Each authority links straight to the maps it publishes, the way Shiva
@@ -159,7 +160,7 @@ export default function HomeGreaterNoida() {
 				<div className="relative aspect-4/3 overflow-hidden rounded-xl shadow-(--shadow-lift)">
 					<Image
 						src="/site-assets/hero-1920.webp"
-						alt=""
+						alt="High-rise apartment towers behind a row of trees and open green space in Greater Noida"
 						fill
 						sizes="(max-width: 1024px) 100vw, 50vw"
 						className="object-cover"
@@ -175,12 +176,16 @@ export default function HomeGreaterNoida() {
 						<br className="hidden sm:block" /> In
 					</h2>
 					<ul className="grid grid-cols-2 gap-6 sm:grid-cols-4">
-						{DEALS_IN.map(({ icon: Icon, label }) => (
+						{DEALS_IN.map(({ icon: Icon, label, href }) => (
 							<li key={label} className="text-center">
-								<span className="mx-auto grid size-16 place-items-center rounded-xl border-2 border-brand-400/40 text-brand-300">
-									<Icon aria-hidden className="size-8" strokeWidth={1.5} />
-								</span>
-								<span className="mt-3 block text-sm font-semibold">{label}</span>
+								<Link href={href} className="group block">
+									<span className="mx-auto grid size-16 place-items-center rounded-xl border-2 border-brand-400/40 text-brand-300 transition-colors group-hover:border-brand-300 group-hover:text-brand-200">
+										<Icon aria-hidden className="size-8" strokeWidth={1.5} />
+									</span>
+									<span className="mt-3 block text-sm font-semibold group-hover:underline">
+										{label}
+									</span>
+								</Link>
 							</li>
 						))}
 					</ul>
@@ -232,16 +237,18 @@ export default function HomeGreaterNoida() {
 							<li key={area.slug} className="reveal">
 								<Link href={`/maps/${area.slug}`} className="group block">
 									<span className="block overflow-hidden rounded-lg bg-white p-2 shadow-(--shadow-soft) ring-1 ring-sand-200">
-										{/* eslint-disable-next-line @next/next/no-img-element -- prebuilt webp thumbnail. */}
-										<img
-											src={thumbUrl(area.cover)}
-											alt={`${area.name} layout map`}
-											width={480}
-											height={360}
-											loading="lazy"
-											decoding="async"
-											className="aspect-4/3 w-full rounded-sm object-contain transition-transform duration-500 group-hover:scale-105"
-										/>
+										{/* Full-res through the optimiser: the 480px thumb went soft
+										    at this size, and softer again on a 2x screen. */}
+										<span className="relative block aspect-4/3 w-full overflow-hidden rounded-sm">
+											<Image
+												src={area.cover}
+												alt={`${area.name} layout map`}
+												fill
+												sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
+												quality={80}
+												className="object-contain transition-transform duration-500 group-hover:scale-105"
+											/>
+										</span>
 									</span>
 									<span className="mt-3 block rounded-full bg-brand-700 px-4 py-2.5 text-center text-sm font-semibold text-white transition-colors group-hover:bg-brand-800">
 										{area.name} Map

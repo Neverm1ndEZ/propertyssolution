@@ -5,7 +5,6 @@ import { ChevronRight } from "lucide-react";
 import MapGrid from "@/components/MapGrid";
 import JsonLd, { breadcrumbs } from "@/components/JsonLd";
 import { AREA_LIST, getArea, getMaps } from "@/lib/maps";
-import { keywordsFor, pageKeywords } from "@/lib/seo";
 import PageTail from "@/components/PageTail";
 
 export const dynamicParams = false;
@@ -24,7 +23,6 @@ export async function generateMetadata({
 	return {
 		title: `${area.name} layout plans`,
 		description: `All ${area.count} authority layout plans for ${area.name}, free to view and download at full resolution — sector maps, industrial pockets and village abadi sheets, with plot numbers and road widths.`,
-		keywords: pageKeywords(keywordsFor(area.name, area.name)),
 		alternates: { canonical: `/maps/${area.slug}` },
 	};
 }

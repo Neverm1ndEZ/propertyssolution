@@ -216,4 +216,38 @@ export const LANDING_PAGES: LandingPage[] = [
 			},
 		],
 	},
+	{
+		// The footer and the schema both claim Sikandrabad; nothing on the site
+		// backed it up. The UPSIDA industrial area plan is in the map set.
+		slug: "industrial-land-in-sikandrabad",
+		area: "greaterNoida",
+		title: "Industrial Land in Sikandrabad",
+		description:
+			"Industrial land, factory plots and warehouse space in the Sikandrabad industrial area (UPSIDA), Bulandshahr. View the authority layout plan free and call Property Solutions.",
+		h1: "Industrial Land in Sikandrabad",
+		h2: "Sikandrabad industrial area — plots, sheds and warehousing.",
+		body: [
+			"Sikandrabad sits in Bulandshahr district, just beyond Greater Noida on the Bulandshahr road, and its industrial area is developed by UPSIDA rather than by GNIDA. That single difference changes the paperwork: allotment, transfer and permitted-use terms follow UPSIDA's rules, and a buyer who assumes a Greater Noida process finds that out late.",
+			"It is the cheaper industrial belt in this corridor. Plots here price well under the Ecotech sectors, the EPIP export zone is next door, and the Eastern Peripheral Expressway and the Delhi–Howrah line put it within working distance of both Noida and Ghaziabad. For a unit that needs floor area rather than a Greater Noida address, that trade is usually worth making.",
+			"We deal in Sikandrabad factory plots, built sheds, warehouse and godown space, on both sale and purchase. The authority layout plan for the Sikandrabad industrial area is on this site, free to view and download at full resolution — check the plot number, the plot size and the road width on it, then call us about what is actually available.",
+		],
+		highlights: [
+			{
+				title: "UPSIDA land",
+				body: "A different authority from GNIDA, with its own transfer and permitted-use terms.",
+			},
+			{
+				title: "Lower entry price",
+				body: "Rates well below the Ecotech sectors for comparable floor area.",
+			},
+			{
+				title: "Factory & warehouse",
+				body: "Open plots, built sheds and godown space, sale or long lease.",
+			},
+			{
+				title: "EPIP next door",
+				body: "The export promotion industrial park sits on the same belt.",
+			},
+		],
+	},
 ];
