@@ -23,15 +23,14 @@ export const SITE = {
 		"Property dealer in Greater Noida since 2009 — residential, commercial and industrial plots. Every authority layout plan, free to view and download.",
 	/** The line under the name in the contact band; client's own wording. */
 	tagline: "Property Dealers in Greater Noida | Greater Noida Property Dealer",
-	// The page's h1. It was the brand name, which ranks for nothing — the
-	// brand stays in the header logo.
-	heroHeadline: "Property Dealers in Greater Noida — Plots, Land & Layout Maps",
+	heroHeadline: "Property Solutions",
 	// The regions, as the client writes them.
 	heroRegions: "Greater Noida • Noida • YEIDA (Yamuna Expressway)",
 	heroTagline:
 		"From homes to industries, we help you find your perfect space solution.",
 	heroSubline:
 		"Residential, commercial and industrial plots across Greater Noida and Noida Extension — with every authority layout plan in one place.",
+	heroInfo: "Greater Noida Property Dealer",
 	/**
 	 * The region-specific block on /about. Each domain argues its own belt here
 	 * so the two About pages are not the same page twice.
